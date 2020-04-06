@@ -1,0 +1,22 @@
+{
+  "name": "enhughesiasm.github.io",
+  "version": "1.0.0",
+  "description": "homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enhughesiasm/enhughesiasm.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enhughesiasm/enhughesiasm.github.io/issues"
+  },
+  "homepage": "https://github.com/enhughesiasm/enhughesiasm.github.io#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
