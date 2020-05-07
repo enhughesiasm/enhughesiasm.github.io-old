@@ -35,8 +35,11 @@ import NowPage from '../now/now_page';
 function usePageViews(location) {
 	useEffect(() => {
 		if (window.gtag) {
-			// send 'pageview' to analytics, as we've navigated somewhere
-			window.gtag('config', 'UA-149409126-1', { anonymize_ip: true }); // anonymize all users IP addresses
+			// send navigation event to analytics, as we've navigated somewhere
+			window.gtag('config', 'UA-149409126-1', {
+				anonymize_ip: true,
+				page_path: location,
+			}); // anonymize all users IP addresses
 		}
 	}, [location]);
 }
