@@ -1,0 +1,144 @@
+{
+	"__comments":
+	{
+		"__comment": ""
+	},
+	"default": 
+	{ 
+		"canonicalUrl": "https://enhughesiasm.com/",
+		"title": "The online home of Neil Hughes",		
+		"contentType": "website",
+		"description": "Neil Hughes is a comedian, author, speaker and mental health campaigner.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"home":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/",
+		"title": "The online home of Neil Hughes",
+		"contentType": "website",		
+		"description": "Neil Hughes is a comedian, author, speaker and mental health campaigner.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},	
+	"shop_before_life":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/shop-before-life/",
+		"title": "The Shop Before Life - a novel by Neil Hughes",		
+		"contentType": "website",
+		"description": "Before being born, everybody visits a magical shop to choose who they will become on Earth. But the new Apprentice has some questions...",
+		"imageUrl": "https://enhughesiasm.com/images/who2_front_none.png"	
+	},
+	"complex":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/complex/",
+		"title": "The Supplier's Complex - a game by Neil Hughes",		
+		"contentType": "website",
+		"description": "Play as the Supplier and build a factory to create human traits for the Shop Before Life.",
+		"imageUrl": "https://enhughesiasm.com/images/who2_front_none.png"		
+	},
+	"speaking":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/speaking/",
+		"title": "Speaker on Mental Health & Comedian - Neil Hughes",		
+		"contentType": "website",
+		"description": "Neil Hughes gives funny, hilarious and helpful talks and presentations on anxiety and mental health.",
+		"imageUrl": "https://enhughesiasm.com/images/speaker.png"		
+	},
+	"now":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/now/",
+		"title": "Neil Hughes - Author, Speaker, Comedian - Now",		
+		"contentType": "website",
+		"description": "What is Neil Hughes—comedian, writer, physicist and fool—doing right now?",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"books":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/books/",
+		"title": "Books by Neil Hughes",		
+		"contentType": "website",
+		"description": "Neil Hughes has written a number of books, including 'Walking on Custard' and 'The Shop Before Life'",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"anxiety":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/anxiety/",
+		"title": "Anxiety Resources - by Neil Hughes",
+		"description": "Neil Hughes lived with anxiety for years before writing a funny book about anxiety. Now he helps others with their mental health.",
+		"imageUrl": "https://enhughesiasm.com/images/anxiety.png"		
+	},
+	"walking_on_custard":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/walking-on-custard/",
+		"title": "Walking on Custard & the Meaning of Life - the Book for Anxious Humans, by Neil Hughes",		
+		"description": "A funny book about anxiety and mental health by the comedian Neil Hughes.",
+		"imageUrl": "https://enhughesiasm.com/images/custard.png",
+		"includeSocialMediaScripts": true
+	},
+	"contact":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/contact/",
+		"title": "Contact - Neil Hughes",		
+		"description": "Get in touch with Neil Hughes about books, comedy, mental health, custard or anything else.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"comedy_writing":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/humour-consultant/",
+		"title": "Comedy Consulting - Help writing funny speeches - by Neil Hughes",		
+		"description": "Need help writing a funny speech? Neil Hughes can help you with jokes and presentations.",
+		"imageUrl": "https://enhughesiasm.com/images/consultant.png"		
+	},
+	"articles":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/articles/",
+		"title": "Articles - by Neil Hughes",		
+		"description": "Neil Hughes writes helpful articles about life, productivity, multiple interests, mental health and more.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"occasional_email_experience":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/occasional-email-experience/",
+		"title": "The Occasional Email Experience",		
+		"description": "An irregular, funny newsletter about life, by Neil Hughes.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"interactive":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/interactive/",
+		"title": "Cool interactive stuff - by Neil Hughes",		
+		"description": "Neil Hughes is a software developer who creates cool things.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"
+	},
+	"support":
+	{
+		"canonicalUrl": "https://enhughesiasm.com/support/",
+		"title": "Support mental health events in schools - by Neil Hughes",		
+		"description": "Neil Hughes gives talks about mental health in schools - you can support him here.",
+		"imageUrl": "https://enhughesiasm.com/images/speaker.png"		
+	},
+	"confirm_signup":
+	{
+		"title": "Please confirm signup - Occasional Email Experience",
+		"description": "The Occasional Email Experience is an irregular email newsletter full of funny stories and advice about life.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"signup_confirmed":
+	{
+		"title": "Welcome to the Occasional Email Experience",
+		"description": "The Occasional Email Experience is an irregular email newsletter full of funny stories and advice about life.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"privacy_policy":
+	{		
+		"canonicalUrl": "https://enhughesiasm.com/privacy/",
+		"title": "Privacy Policy",		
+		"description": "The Privacy Policy for Neil Hughes, Walking on Custard, and Enhughesiasm",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	},
+	"missing":
+	{
+		"title": "404 - PAGE MISSING",
+		"description": "This page probably shouldn't exist. If you're seeing this, let me know, as I probably screwed something up.",
+		"imageUrl": "https://enhughesiasm.com/images/neil.png"		
+	}
+}

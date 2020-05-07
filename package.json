@@ -1,22 +1,73 @@
 {
-  "name": "enhughesiasm.github.io",
-  "version": "1.0.0",
-  "description": "homepage",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enhughesiasm/enhughesiasm.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/enhughesiasm/enhughesiasm.github.io/issues"
-  },
-  "homepage": "https://github.com/enhughesiasm/enhughesiasm.github.io#readme",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  }
+	"name": "enhughesiasm.github.io",
+	"homepage": "https://enhughesiasm.github.io",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.6.2",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/plugin-proposal-json-strings": "^7.0.0",
+		"@babel/plugin-proposal-optional-chaining": "^7.6.0",
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"@babel/plugin-syntax-import-meta": "^7.0.0",
+		"@babel/plugin-transform-runtime": "^7.7.6",
+		"@babel/polyfill": "^7.6.0",
+		"@babel/preset-env": "^7.6.2",
+		"@babel/preset-react": "^7.0.0",
+		"@babel/register": "^7.9.0",
+		"@babel/runtime": "^7.7.6",
+		"@n8tb1t/use-scroll-position": "^1.0.43",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.5.0",
+		"@testing-library/user-event": "^7.2.1",
+		"babel-eslint": "^10.0.3",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-module-resolver": "^3.2.0",
+		"babel-plugin-object-to-json-parse": "0.0.7",
+		"bulma": "^0.8.2",
+		"bulma-extensions": "^6.2.7",
+		"moment": "^2.24.0",
+		"node-sass": "^4.14.1",
+		"poisson-process": "^1.0.0",
+		"pure-react-carousel": "^1.24.1",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-helmet": "^5.2.1",
+		"react-magnifier": "^3.0.4",
+		"react-recaptcha-v3": "^1.1.0",
+		"react-router": "^5.1.2",
+		"react-router-dom": "^5.1.2",
+		"react-router-sitemap": "^1.2.0",
+		"react-scripts": "3.4.1",
+		"react-sliding-pane": "^4.0.1",
+		"react-spinners": "^0.6.1",
+		"react-spring": "^8.0.27"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"gh-pages": "^2.2.0"
+	}
 }
