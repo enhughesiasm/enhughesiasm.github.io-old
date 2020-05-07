@@ -33,13 +33,12 @@ import Privacy from '../privacy/privacy';
 import NowPage from '../now/now_page';
 
 function usePageViews(location) {
-	console.log(location);
 	useEffect(() => {
 		if (window.gtag) {
 			// send navigation event to analytics, as we've navigated somewhere
 			window.gtag('config', 'UA-149409126-1', {
 				anonymize_ip: true,
-				page_path: location.pathname,
+				page_path: location.pathname, // TK TODO this ought to be canonical, i.e. /sbl should be /shop-before-life
 			}); // anonymize all users IP addresses
 		}
 	}, [location]);
