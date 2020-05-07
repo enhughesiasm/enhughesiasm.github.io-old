@@ -101,6 +101,11 @@ export default class ComplexGame extends React.Component {
 			addBodyClass('complexBody');
 		}
 
+		if (hasBodyClass('has-navbar-fixed-top') || hasBodyClass('fixed')) {
+			removeBodyClass('has-navbar-fixed-top');
+			removeBodyClass('fixed');
+		}
+
 		// unload buy me a coffee widget
 		unloadBuyMeACoffeeWidget();
 
@@ -117,6 +122,12 @@ export default class ComplexGame extends React.Component {
 
 	componentWillUnmount() {
 		removeBodyClass('complexBody');
+
+		if (!hasBodyClass('has-navbar-fixed-top') || !hasBodyClass('fixed')) {
+			addBodyClass('has-navbar-fixed-top');
+			addBodyClass('fixed');
+		}
+
 		clearInterval(this.timerID);
 		clearInterval(this.slowTimerID);
 	}

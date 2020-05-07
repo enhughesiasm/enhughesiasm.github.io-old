@@ -26,9 +26,9 @@ const Tile_Coder = () => (
 			<li
 				className='notification is-light is-info'
 				style={{ marginTop: '.5rem' }}>
-				<a href='https://q.enhughesiasm.com'>
-					interactive quiz for live events
-				</a>
+				{/* <a href='https://q.enhughesiasm.com'> */}
+				an interactive quiz for live events
+				{/* </a> */}
 			</li>
 		</ul>
 		<hr />

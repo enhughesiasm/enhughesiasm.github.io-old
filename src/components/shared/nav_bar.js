@@ -181,11 +181,11 @@ class NavBar extends React.Component {
 											The Supplier&apos;s Complex
 										</div>
 									</NavLink>
-									<a
+									{/* <a
 										className='navbar-item'
 										href='https://q.enhughesiasm.com'>
 										&quot;q&quot; - the live experience
-									</a>
+									</a> */}
 								</div>
 							</div>
 							<NavLink
