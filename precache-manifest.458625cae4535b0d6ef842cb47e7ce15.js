@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9460f1ff3872953c8d6d3affc5d5f4ab",
+    "revision": "1e3e7a820665e8086a545b6a2cd783de",
     "url": "/index.html"
   },
   {
-    "revision": "c7bfe7b5ef4c98532a36",
+    "revision": "c31e77d40f9a1caedb00",
     "url": "/static/css/2.c2b765f2.chunk.css"
   },
   {
-    "revision": "405b0696febdf6629210",
-    "url": "/static/css/main.3944350d.chunk.css"
+    "revision": "c5b0db7b079abe655dae",
+    "url": "/static/css/main.d1de8eec.chunk.css"
   },
   {
-    "revision": "c7bfe7b5ef4c98532a36",
-    "url": "/static/js/2.85535f64.chunk.js"
+    "revision": "c31e77d40f9a1caedb00",
+    "url": "/static/js/2.ae3c51ab.chunk.js"
   },
   {
     "revision": "a1a636632721a402612df3e043dd630d",
-    "url": "/static/js/2.85535f64.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ae3c51ab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "405b0696febdf6629210",
-    "url": "/static/js/main.52dd2dc6.chunk.js"
+    "revision": "c5b0db7b079abe655dae",
+    "url": "/static/js/main.4d818b6e.chunk.js"
   },
   {
     "revision": "725d0ef5cabf84c0b1dd",
@@ -56,14 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/img_1448.c1106b4e.jpg"
   },
   {
-    "revision": "5e65188b00f456eeacbd0d09283482ab",
-    "url": "/static/media/jar1transinverted.5e65188b.png"
-  },
-  {
-    "revision": "3d4ba374650070ed49e9dc0526c35691",
-    "url": "/static/media/jarmix.3d4ba374.jpg"
-  },
-  {
     "revision": "3d4ba374650070ed49e9dc0526c35691",
     "url": "/static/media/jarmixleft.3d4ba374.jpg"
   },
@@ -90,18 +82,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "40b17694baf986aed6d5561a14a0098a",
     "url": "/static/media/sblCover.40b17694.jpg"
-  },
-  {
-    "revision": "839771ea6ea279367db5e6607df1e8d3",
-    "url": "/static/media/screenshot.839771ea.png"
-  },
-  {
-    "revision": "6ca742b41613d4dd380dcd96addf3e96",
-    "url": "/static/media/shelves_bw.6ca742b4.jpg"
-  },
-  {
-    "revision": "8f4bb758be4afac102358fe0e430d5f0",
-    "url": "/static/media/shop.8f4bb758.jpg"
   },
   {
     "revision": "19c0e74ce6be161754ecc025c570f738",
