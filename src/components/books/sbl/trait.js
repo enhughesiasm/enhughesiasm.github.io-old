@@ -1,5 +1,5 @@
 import React from 'react';
-import { getTraitName } from './../../complex/trait_names';
+import { getTraitName } from './../../shared/trait_names';
 import jar1 from './../../../resources/images/complex/jar1.jpg';
 import jar2 from './../../../resources/images/complex/jar2.jpg';
 

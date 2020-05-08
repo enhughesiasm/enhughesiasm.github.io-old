@@ -173,14 +173,12 @@ class NavBar extends React.Component {
 									</div>
 								</NavLink>
 								<div className='navbar-dropdown'>
-									<NavLink
-										to='/complex'
+									<a
+										href='https://enhughesiasm.com/complex'
 										className='navbar-item'
 										activeclassname='active'>
-										<div onClick={this.onNavLinkClicked}>
-											The Supplier&apos;s Complex
-										</div>
-									</NavLink>
+										The Supplier&apos;s Complex
+									</a>
 									{/* <a
 										className='navbar-item'
 										href='https://q.enhughesiasm.com'>

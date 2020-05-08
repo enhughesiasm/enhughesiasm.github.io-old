@@ -4,8 +4,6 @@ require('../../../node_modules/bulma/sass/utilities/functions.sass');
 // alter bulma variables
 require('./customise.scss');
 
-require('./bulma-slider.css');
-
 // my responsive fixes
 require('./responsive.scss');
 

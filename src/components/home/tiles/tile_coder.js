@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import zxColors from './../../../resources/images/zx_colors.png';
-import complexScreenshot from './../../../resources/images/complex/screenshot.png';
 import LinkButton from '../../shared/link_button';
 
 const Tile_Coder = () => (
@@ -17,10 +15,10 @@ const Tile_Coder = () => (
 			<li
 				className='notification is-light is-info'
 				style={{ marginTop: '.5rem' }}>
-				<Link to='/complex'>
+				<a href='https://enhughesiasm.com/complex'>
 					<strong>free online game</strong>
 					<p>create personality traits for a magical shop</p>
-				</Link>
+				</a>
 			</li>
 
 			<li

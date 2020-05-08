@@ -12,7 +12,6 @@ import { Switch, useLocation } from 'react-router-dom';
 // route types
 import HomeRoute from './home_route';
 import MainRoute from './main_route';
-import ComplexRoute from './complex_route';
 
 import Home from '../home/home';
 import NotFound from '../not_found';
@@ -74,7 +73,7 @@ const Routes = () => {
 
 			<MainRoute path='/interactive' component={Interactive} />
 
-			<ComplexRoute path='/complex' />
+			{/* <ComplexRoute path='/complex' /> */}
 
 			<MainRoute path='/contact' component={Contact} />
 			<MainRoute path='/support' component={Support} />

@@ -20,7 +20,7 @@ import paulCorfield4 from './../../../resources/images/paul_corfield_4.jpg';
 import sblCover from './../../../resources/images/sblCover.jpg';
 //import sblShelves from './../../../resources/images/sblShelves.jpg';
 import jarsLeft from './../../../resources/images/jarmixleft.jpg';
-// import complexScreenshot from './../../../resources/images/complex/screenshot.png';
+
 //import jarsRight from './../../../resources/images/jarmixright.jpg';
 import ReadSample from '../read_sample';
 import CoverBy from '../cover_by';

@@ -17,15 +17,15 @@ const SBLPlayGame = () => (
 							magical traits in a{' '}
 							<strong>fun, free browser game</strong>.
 							<p>
-								<Link
-									to='/complex'
+								<a
+									href='https://enhughesiasm.com/complex'
 									style={{
-										textDecoration: 'none'
+										textDecoration: 'none',
 									}}>
 									<span className='button is-success is-rounded'>
 										Play now
 									</span>
-								</Link>
+								</a>
 							</p>
 						</span>
 					</div>

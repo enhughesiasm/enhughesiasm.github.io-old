@@ -19,11 +19,11 @@ function Interactive() {
 						className='list-item has-text-info is-flex'
 						style={{ alignItems: 'center' }}>
 						<strong>
-							<Link to='/complex'>
+							<a href='https://enhughesiasm.com/complex'>
 								<div className='button is-success'>
 									The Supplier&apos;s Complex
 								</div>
-							</Link>
+							</a>
 						</strong>
 						<span style={{ marginLeft: '1rem' }}>
 							Create magical jars of human traits to supply{' '}
