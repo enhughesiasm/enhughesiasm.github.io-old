@@ -16,5 +16,7 @@ const Routes = require('./src/components/routes/routes_sitemap').default;
 new Sitemap(Routes)
 	.filterPaths(filterConfig)
 	.applyParams(paramsConfig)
-	.build('https://www.enhughesiasm.com', { limitCountPaths: 5000 })
+	.build('https://enhughesiasm.com', { limitCountPaths: 5000 })
 	.save('./public/sitemap.xml', 'static');
+
+console.log('Sitemap generation code completed.');

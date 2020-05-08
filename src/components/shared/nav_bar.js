@@ -64,7 +64,7 @@ class NavBar extends React.Component {
 								exact
 								to='/'
 								className='navbar-item'
-								activeclassname='active'>
+								activeClassName='active'>
 								<div onClick={this.onNavLinkClicked}>home</div>
 							</NavLink>
 
@@ -72,7 +72,7 @@ class NavBar extends React.Component {
 								<NavLink
 									to='/anxiety'
 									className='navbar-link'
-									activeclassname='active'>
+									activeClassName='active'>
 									<div onClick={this.onNavLinkClicked}>
 										anxiety
 									</div>
@@ -86,7 +86,7 @@ class NavBar extends React.Component {
 									<NavLink
 										to='/woc'
 										className='navbar-item'
-										activeclassname='active'>
+										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											book
 										</div>
@@ -94,7 +94,7 @@ class NavBar extends React.Component {
 									<NavLink
 										to='/speaking'
 										className='navbar-item'
-										activeclassname='active'>
+										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											talks
 										</div>
@@ -102,7 +102,7 @@ class NavBar extends React.Component {
 									<NavLink
 										to='/support'
 										className='navbar-item'
-										activeclassname='active-drop'>
+										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											support Neil&apos;s work
 										</div>
@@ -113,7 +113,7 @@ class NavBar extends React.Component {
 								<NavLink
 									to='/books'
 									className='navbar-link'
-									activeclassname='active'>
+									activeClassName='active'>
 									<div onClick={this.onNavLinkClicked}>
 										books
 									</div>
@@ -121,7 +121,8 @@ class NavBar extends React.Component {
 								<div className='navbar-dropdown'>
 									<NavLink
 										to='/walking-on-custard'
-										className='navbar-item'>
+										className='navbar-item'
+										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											Walking on Custard & the Meaning of
 											Life
@@ -129,7 +130,8 @@ class NavBar extends React.Component {
 									</NavLink>
 									<NavLink
 										to='/shop-before-life'
-										className='navbar-item'>
+										className='navbar-item'
+										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											The Shop Before Life
 										</div>
@@ -140,7 +142,7 @@ class NavBar extends React.Component {
 								<NavLink
 									to='/speaking'
 									className='navbar-link'
-									activeclassname='active'>
+									activeClassName='active'>
 									<div onClick={this.onNavLinkClicked}>
 										speaking
 									</div>
@@ -148,6 +150,7 @@ class NavBar extends React.Component {
 								<div className='navbar-dropdown'>
 									<NavLink
 										to='/speaking'
+										activeClassName='active-drop'
 										className='navbar-item'>
 										<div onClick={this.onNavLinkClicked}>
 											on mental health
@@ -156,7 +159,7 @@ class NavBar extends React.Component {
 									<NavLink
 										to='/humour-consultant'
 										className='navbar-item'
-										activeclassname='active'>
+										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											humour consultant
 										</div>
@@ -167,7 +170,7 @@ class NavBar extends React.Component {
 								<NavLink
 									to='/interactive'
 									className='navbar-link'
-									activeclassname='active'>
+									activeClassName='active'>
 									<div onClick={this.onNavLinkClicked}>
 										games
 									</div>
@@ -176,7 +179,7 @@ class NavBar extends React.Component {
 									<a
 										href='https://enhughesiasm.com/complex'
 										className='navbar-item'
-										activeclassname='active'>
+										activeClassName='active-drop'>
 										The Supplier&apos;s Complex
 									</a>
 									{/* <a
@@ -189,7 +192,7 @@ class NavBar extends React.Component {
 							<NavLink
 								to='/occasional-email-experience'
 								className='navbar-item'
-								activeclassname='active'>
+								activeClassName='active'>
 								<div onClick={this.onNavLinkClicked}>
 									occasional email experience
 								</div>
@@ -200,7 +203,7 @@ class NavBar extends React.Component {
 							<NavLink
 								to='/contact'
 								className='navbar-item'
-								activeclassname='active'>
+								activeClassName='active'>
 								<div onClick={this.onNavLinkClicked}>
 									contact
 								</div>

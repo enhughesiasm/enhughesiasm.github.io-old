@@ -111,17 +111,10 @@ body {
 	p {
 		margin: 0.5rem 0;
 	}
-
-	ul {
-		// list-style: none !important;
-	}
 }
 
 #wrapper {
-	display: flex;
-	flex: 1 0 auto;
-	min-height: $wrapper-height;
-	padding: 0 2rem;
+	min-height: 75vh;
 }
 
 .footer {
