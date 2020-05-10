@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import FontAwesome from './font_awesome';
 
 class NavBar extends React.Component {
 	constructor(props) {
@@ -208,6 +209,13 @@ class NavBar extends React.Component {
 									contact
 								</div>
 							</NavLink>
+							{/* FINAL TWO FOR SPACING ON MOBILE DEVICES */}
+							<div className='navbar-item is-hidden-tablet'>
+								...
+							</div>
+							<div className='navbar-item is-hidden-tablet'>
+								<FontAwesome icon='smile' />
+							</div>
 						</div>
 					</div>
 				</nav>

@@ -27,4 +27,9 @@ body.has-navbar-fixed-top {
 	.socialMediaItem {
 		margin: 0.4rem 0 0.4rem !important;
 	}
+
+	// hide buy me a coffee on mobile
+	div#bmc-wbtn {
+		display: none !important;
+	}
 }
