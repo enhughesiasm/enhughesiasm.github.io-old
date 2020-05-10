@@ -76,7 +76,7 @@ function Speaking() {
 						<LinkButton
 							to='/contact'
 							className='button is-danger is-rounded'>
-							Ask about booking a talk here
+							Ask about booking a talk
 						</LinkButton>
 					</div>
 				</div>
@@ -209,7 +209,7 @@ const SpeakingContact = () => (
 						<LinkButton
 							to='/contact'
 							className='button is-danger is-rounded'>
-							Send your inquiry here
+							Ask about a talk
 						</LinkButton>
 					</p>
 				</div>

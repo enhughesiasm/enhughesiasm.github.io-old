@@ -32,7 +32,6 @@ import jarsImg1024 from './../../../resources/images/sbl_renders/JCU_PE_1024.jpg
 import shopImg1024 from './../../../resources/images/sbl_renders/SBL_PE_1024.jpg';
 import FontAwesome from '../../shared/font_awesome';
 import SBLMedals from './sbl_medals';
-import SBLPlayGame from './sbl_play_game';
 
 function ShopBeforeLife() {
 	var officialQuotes = require('../../../resources/data/quotes/sbl_official.json');

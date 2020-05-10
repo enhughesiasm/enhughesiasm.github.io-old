@@ -41,7 +41,7 @@ const SocialMediaBar = () => {
 					data-y_margin='18'></script>
 			</Helmet>
 
-			<span className='socialMediaItem'>
+			<span className='socialMediaItem is-hidden-mobile'>
 				<a
 					href='https://twitter.com/enhughesiasm?ref_src=twsrc%5Etfw'
 					className='twitter-follow-button'
@@ -76,7 +76,7 @@ const SocialMediaBar = () => {
 				</a>
 			</span>
 
-			<span className='socialMediaItem'>
+			<span className='socialMediaItem is-hidden-mobile'>
 				<div
 					className='g-ytsubscribe'
 					data-channelid='UCo7rSj8sIu823Z3c5ju9FfA'
