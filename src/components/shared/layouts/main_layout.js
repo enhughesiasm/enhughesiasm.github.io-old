@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../header';
 import Footer from '../footer';
 import HelmetContainer from '../helmet_container';
 import SubscribePopup from '../subscribe_popup/subscribe_popup';
+import SuspenseLoader from './suspense_loader';
 
 export class MainLayout extends React.PureComponent {
 	render() {
@@ -23,7 +24,9 @@ export class MainLayout extends React.PureComponent {
 						is-three-fifths-desktop is-offset-one-fifth-desktop
 						is-half-widescreen is-offset-one-quarter-widescreen
 						is-one-third-fullhd is-offset-one-third-fullhd'>
-								{this.props.children}
+								<Suspense fallback={<SuspenseLoader />}>
+									{this.props.children}
+								</Suspense>
 							</div>
 						</div>
 					</div>

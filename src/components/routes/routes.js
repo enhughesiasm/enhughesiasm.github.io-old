@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Switch, useLocation } from 'react-router-dom';
 
 import allRoutes from './all_routes';
