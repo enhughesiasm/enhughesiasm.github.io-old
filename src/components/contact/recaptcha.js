@@ -7,7 +7,6 @@ const propTypes = {
 	elementID: PropTypes.string,
 	verifyCallbackName: PropTypes.string,
 	verifyCallback: PropTypes.func,
-	sitekey: PropTypes.string.isRequired,
 	action: PropTypes.string.isRequired,
 };
 

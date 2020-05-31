@@ -6,15 +6,8 @@ import clientConfig from '../../config/client_config';
 function Contact() {
 	return (
 		<div className='has-text-centered has-spacing-top-3'>
-			<HelmetContainer page='contact'>
-				<script
-					defer
-					src={
-						'https://www.google.com/recaptcha/api.js?render=' +
-						clientConfig.recaptchaSiteKey
-					}
-				/>
-			</HelmetContainer>
+			<HelmetContainer page='contact' />
+
 			<h1 className='title'>contact</h1>
 			<div className='content'>
 				<div className='notification is-light'>
@@ -33,7 +26,7 @@ function Contact() {
 					</p>
 				</div>
 				<ContactFormGate />
-				<p className='is-size-6 notification is-light'>
+				<p className='is-size-6 notification is-light is-hidden-mobile'>
 					Or use your preferred social media site via the links below.
 				</p>
 			</div>

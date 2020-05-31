@@ -3,17 +3,21 @@ import Helmet from 'react-helmet';
 
 export const PatreonButtonContent = () => (
 	<>
-		<Helmet>
+		{/* <Helmet>
 			<script
 				defer
 				src='https://c6.patreon.com/becomePatronButton.bundle.js'
 			/>
-		</Helmet>
-		<span className='socialMediaItem' style={{ display: 'inline-block' }}>
+		</Helmet> */}
+		<span
+			className='socialMediaItem is-hidden-mobile'
+			style={{ display: 'inline-block' }}>
 			<a
+				className='button is-danger is-rounded is-small'
 				href='https://www.patreon.com/bePatron?u=295238'
-				data-patreon-widget-type='become-patron-button'>
-				Become a Patron!
+				target='_blank'
+				rel='noopener noreferrer'>
+				Support my mental health work
 			</a>
 		</span>
 	</>

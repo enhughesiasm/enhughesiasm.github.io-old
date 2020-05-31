@@ -38,6 +38,7 @@ const Routes = () => {
 				.map((r) => (
 					<HomeRoute
 						exact={r.exact}
+						key={r.name}
 						path={r.path}
 						component={r.component}
 					/>
@@ -45,7 +46,11 @@ const Routes = () => {
 			{allRoutes
 				.filter((a) => a.layoutType === 'main')
 				.map((r) => (
-					<MainRoute path={r.path} component={r.component} />
+					<MainRoute
+						key={r.name}
+						path={r.path}
+						component={r.component}
+					/>
 				))}
 
 			<MainRoute component={NotFound} />
