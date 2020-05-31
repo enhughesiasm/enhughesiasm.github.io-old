@@ -2,15 +2,15 @@ import React from 'react';
 import TopTitle from '../shared/top_title';
 import Book from './book';
 
-import wocCover from './../../resources/images/wocCover.jpg';
-import wocCoverWebp from './../../resources/images/WebP/wocCover.webp';
-import wocCoverJp2 from './../../resources/images/JP2/wocCover.jp2';
-import wocCoverJxr from './../../resources/images/JXR/wocCover.jxr';
+import wocCover from './../../resources/images/wocCover_thumb.jpg';
+import wocCoverWebp from './../../resources/images/WebP/wocCover_thumb.webp';
+import wocCoverJp2 from './../../resources/images/JP2/wocCover_thumb.jp2';
+import wocCoverJxr from './../../resources/images/JXR/wocCover_thumb.jxr';
 
-import sblPrev from './../../resources/images/sblCover.jpg';
-import sblCoverWebp from './../../resources/images/WebP/sblCover.webp';
-import sblCoverJp2 from './../../resources/images/JP2/sblCover.jp2';
-import sblCoverJxr from './../../resources/images/JXR/sblCover.jxr';
+import sblPrev from './../../resources/images/sblCover_thumb.jpg';
+import sblCoverWebp from './../../resources/images/WebP/sblCover_thumb.webp';
+import sblCoverJp2 from './../../resources/images/JP2/sblCover_thumb.jp2';
+import sblCoverJxr from './../../resources/images/JXR/sblCover_thumb.jxr';
 
 import HelmetContainer from '../shared/helmet_container';
 
