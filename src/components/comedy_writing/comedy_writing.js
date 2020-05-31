@@ -1,10 +1,16 @@
 import React from 'react';
 import TopTitle from '../shared/top_title';
+
 import micImg from './../../resources/images/microphone.jpg';
+import micImgWebp from './../../resources/images/WebP/microphone.webp';
+import micImgJxr from './../../resources/images/JXR/microphone.jxr';
+import micImgJp2 from './../../resources/images/JP2/microphone.jp2';
+
 import HelmetContainer from '../shared/helmet_container';
 import Quote from '../shared/quotes/quote';
 import YouTubeEmbed from '../shared/youtube_embed';
 import LinkButton from '../shared/link_button';
+import PictureContainer from '../shared/picture_container';
 
 function ComedyWriting() {
 	return (
@@ -18,7 +24,13 @@ function ComedyWriting() {
 			/>
 
 			<div className='content has-text-centered'>
-				<img src={micImg} width='50%' />
+				<PictureContainer
+					fallback={micImg}
+					webp={micImgWebp}
+					jp2={micImgJp2}
+					jxr={micImgJxr}
+					width='50%'
+				/>
 				<div className='smallPrint'>
 					Photo by{' '}
 					<a href='https://unsplash.com/@esloman'>Elliot Sloman</a> on

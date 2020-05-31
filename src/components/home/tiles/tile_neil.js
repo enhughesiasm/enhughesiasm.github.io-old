@@ -1,6 +1,15 @@
 import React from 'react';
-import facePic from './../../../resources/images/img_1448.jpg';
-import facePic2 from './../../../resources/images/neil_hughes_al.jpg';
+
+import facePicFallback from './../../../resources/images/img_1448.jpg';
+import facePicWebP from './../../../resources/images/WebP/img_1448.webp';
+import facePicJp2 from './../../../resources/images/JP2/img_1448.jp2';
+import facePicJxr from './../../../resources/images/JXR/img_1448.jxr';
+
+import facePic2Fallback from './../../../resources/images/neil_hughes_al.jpg';
+import facePic2WebP from './../../../resources/images/WebP/neil_hughes_al.webp';
+import facePic2Jp2 from './../../../resources/images/JP2/neil_hughes_al.jp2';
+import facePic2Jxr from './../../../resources/images/JXR/neil_hughes_al.jxr';
+import PictureContainer from '../../shared/picture_container';
 
 export default class Tile_Neil extends React.Component {
 	constructor(props) {
@@ -22,25 +31,29 @@ export default class Tile_Neil extends React.Component {
 						Neil Hughes is currently a...
 					</p>
 					<div className='has-text-centered'>
-						<img
+						<PictureContainer
+							fallback={facePicFallback}
+							webp={facePicWebP}
+							jp2={facePicJp2}
+							jxr={facePicJxr}
+							alt='Neil Hughes profile'
 							className={
 								this.state.showFirstPic ? '' : 'is-hidden'
 							}
-							src={facePic}
-							alt='Neil Hughes profile'
-							title='Neil Hughes profile'
 							style={{
 								maxWidth: '57%',
 								borderRadius: '290486px',
 							}}
 						/>
-						<img
+						<PictureContainer
+							fallback={facePic2Fallback}
+							webp={facePic2WebP}
+							jp2={facePic2Jp2}
+							jxr={facePic2Jxr}
+							alt='Neil Hughes profile'
 							className={
 								!this.state.showFirstPic ? '' : 'is-hidden'
 							}
-							src={facePic2}
-							alt='Neil Hughes profile'
-							title='Neil Hughes profile'
 							style={{
 								maxWidth: '57%',
 								borderRadius: '290486px',

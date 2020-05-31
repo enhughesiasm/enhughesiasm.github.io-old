@@ -4,7 +4,12 @@ import TopTitle from '../shared/top_title';
 import HelmetContainer from '../shared/helmet_container';
 import YouTubeEmbed from '../shared/youtube_embed';
 import wocCover from './../../resources/images/wocCover.jpg';
+import wocCoverWebp from './../../resources/images/WebP/wocCover.webp';
+import wocCoverJp2 from './../../resources/images/JP2/wocCover.jp2';
+import wocCoverJxr from './../../resources/images/JXR/wocCover.jxr';
+
 import LinkButton from './../shared/link_button';
+import PictureContainer from '../shared/picture_container';
 
 function AnxietyPage() {
 	return (
@@ -77,7 +82,13 @@ function AnxietyPage() {
 							<div className='content is-size-5 has-text-centered'>
 								<Link to='/woc'>
 									<div>
-										<img src={wocCover} width='300' />
+										<PictureContainer
+											fallback={wocCover}
+											webp={wocCoverWebp}
+											jp2={wocCoverJp2}
+											jxr={wocCoverJxr}
+											style={{ maxWidth: '300px' }}
+										/>
 									</div>
 									<strong>
 										Click here to read the book!

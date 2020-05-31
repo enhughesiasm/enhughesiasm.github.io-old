@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import otmPic from './../../../resources/images/OneTrackMinds.jpg';
+import otmPicWebp from './../../../resources/images/WebP/OneTrackMinds.webp';
+import otmPicJP2 from './../../../resources/images/JP2/OneTrackMinds.jp2';
+import otmPicJxr from './../../../resources/images/JXR/OneTrackMinds.jxr';
+
 import LinkButton from './../../shared/link_button';
+import PictureContainer from '../../shared/picture_container';
 
 const Tile_Speaker = () => {
 	return (
@@ -16,8 +22,11 @@ const Tile_Speaker = () => {
 					target='_blank'
 					rel='noopener noreferrer'>
 					<div className='has-text-centered'>
-						<img
-							src={otmPic}
+						<PictureContainer
+							fallback={otmPic}
+							webp={otmPicWebp}
+							jp2={otmPicJP2}
+							jxr={otmPicJxr}
 							alt='One Track Minds'
 							title='One Track Minds'
 							style={{ maxWidth: '75%' }}

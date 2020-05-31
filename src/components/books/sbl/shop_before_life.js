@@ -14,14 +14,27 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import HelmetContainer from '../../shared/helmet_container';
 
 import paulCorfield2 from './../../../resources/images/paul_corfield_2.jpg';
+import paulCorfield2Webp from './../../../resources/images/WebP/paul_corfield_2.webp';
+import paulCorfield2Jxr from './../../../resources/images/JXR/paul_corfield_2.jxr';
+import paulCorfield2Jp2 from './../../../resources/images/JP2/paul_corfield_2.jp2';
+
 import paulCorfield3 from './../../../resources/images/paul_corfield_3.jpg';
+import paulCorfield3Webp from './../../../resources/images/WebP/paul_corfield_3.webp';
+import paulCorfield3Jxr from './../../../resources/images/JXR/paul_corfield_3.jxr';
+import paulCorfield3Jp2 from './../../../resources/images/JP2/paul_corfield_3.jp2';
+
 import paulCorfield4 from './../../../resources/images/paul_corfield_4.jpg';
+import paulCorfield4Webp from './../../../resources/images/WebP/paul_corfield_4.webp';
+import paulCorfield4Jxr from './../../../resources/images/JXR/paul_corfield_4.jxr';
+import paulCorfield4Jp2 from './../../../resources/images/JP2/paul_corfield_4.jp2';
 
 import sblCover from './../../../resources/images/sblCover.jpg';
-//import sblShelves from './../../../resources/images/sblShelves.jpg';
+import sblCoverWebp from './../../../resources/images/WebP/sblCover.webp';
+import sblCoverJp2 from './../../../resources/images/JP2/sblCover.jp2';
+import sblCoverJxr from './../../../resources/images/JXR/sblCover.jxr';
+
 import jarsLeft from './../../../resources/images/jarmixleft.jpg';
 
-//import jarsRight from './../../../resources/images/jarmixright.jpg';
 import ReadSample from '../read_sample';
 import CoverBy from '../cover_by';
 import BookPurchase from '../book_purchase';
@@ -32,6 +45,7 @@ import jarsImg1024 from './../../../resources/images/sbl_renders/JCU_PE_1024.jpg
 import shopImg1024 from './../../../resources/images/sbl_renders/SBL_PE_1024.jpg';
 import FontAwesome from '../../shared/font_awesome';
 import SBLMedals from './sbl_medals';
+import PictureContainer from '../../shared/picture_container';
 
 function ShopBeforeLife() {
 	var officialQuotes = require('../../../resources/data/quotes/sbl_official.json');
@@ -57,8 +71,12 @@ function ShopBeforeLife() {
 								href='http://viewbook.at/sbl'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<img
-									src={sblCover}
+								<PictureContainer
+									alt='The Shop Before Life'
+									fallback={sblCover}
+									webp={sblCoverWebp}
+									jxr={sblCoverJxr}
+									jp2={sblCoverJp2}
 									style={{ maxWidth: '95%' }}
 								/>
 							</a>
@@ -174,9 +192,24 @@ function ShopBeforeLife() {
 						style={{ alignItems: 'center' }}>
 						<div className='content'>
 							<figure className=''>
-								<img src={paulCorfield2} />
-								<img src={paulCorfield3} />
-								<img src={paulCorfield4} />
+								<PictureContainer
+									fallback={paulCorfield2}
+									webp={paulCorfield2Webp}
+									jxr={paulCorfield2Jxr}
+									jp2={paulCorfield2Jp2}
+								/>
+								<PictureContainer
+									fallback={paulCorfield3}
+									webp={paulCorfield3Webp}
+									jxr={paulCorfield3Jxr}
+									jp2={paulCorfield3Jp2}
+								/>
+								<PictureContainer
+									fallback={paulCorfield4}
+									webp={paulCorfield4Webp}
+									jxr={paulCorfield4Jxr}
+									jp2={paulCorfield4Jp2}
+								/>
 								<figcaption>
 									<em className='is-size-7 has-text-centered'>
 										<p>

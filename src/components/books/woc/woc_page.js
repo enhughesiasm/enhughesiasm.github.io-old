@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import wocCover from './../../../resources/images/wocCover.jpg';
 
-import TopTitle from '../../shared/top_title';
+import wocCover from './../../../resources/images/wocCover.jpg';
+import wocCoverWebp from './../../../resources/images/WebP/wocCover.webp';
+import wocCoverJp2 from './../../../resources/images/JP2/wocCover.jp2';
+import wocCoverJxr from './../../../resources/images/JXR/wocCover.jxr';
+
 import HelmetContainer from '../../shared/helmet_container';
 
 import Quote from '../../shared/quotes/quote';
@@ -9,6 +12,7 @@ import QuoteCycler from '../../shared/quotes/quote_cycler';
 import ReadSample from '../read_sample';
 import CoverBy from '../cover_by';
 import BookPurchase from '../book_purchase';
+import PictureContainer from '../../shared/picture_container';
 
 const quotes = [
 	{
@@ -51,8 +55,11 @@ function WocPage(props) {
 									href='http://viewbook.at/walkingoncustard'
 									target='_blank'
 									rel='noopener noreferrer'>
-									<img
-										src={wocCover}
+									<PictureContainer
+										fallback={wocCover}
+										webp={wocCoverWebp}
+										jxr={wocCoverJxr}
+										jp2={wocCoverJp2}
 										alt='walking on custard book cover'
 										title='walking on custard book cover'
 										className='wocCover'

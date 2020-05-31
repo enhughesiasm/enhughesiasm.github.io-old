@@ -2,8 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import tedImg from '../../resources/images/ted_speak.jpg';
-import otmImg from '../../resources/images/OneTrackMinds.jpg';
+import tedImgWebp from '../../resources/images/WebP/ted_speak.webp';
+import tedImgJP2 from '../../resources/images/JP2/ted_speak.jp2';
+import tedImgJxr from '../../resources/images/JXR/ted_speak.jxr';
+
+import otmImgFallback from '../../resources/images/OneTrackMinds.jpg';
+import otmImgWebp from '../../resources/images/WebP/OneTrackMinds.webp';
+import otmImgJp2 from '../../resources/images/JP2/OneTrackMinds.jp2';
+import otmImgJxr from '../../resources/images/JXR/OneTrackMinds.jxr';
+
 import ebrdImg from '../../resources/images/ebrd.jpg';
+import ebrdImgWebp from '../../resources/images/WebP/ebrd.webp';
+import ebrdImgJP2 from '../../resources/images/JP2/ebrd.jp2';
+import ebrdImgJxr from '../../resources/images/JXR/ebrd.jxr';
 
 import Quote from '../shared/quotes/quote';
 import QuoteCycler from '../shared/quotes/quote_cycler';
@@ -11,6 +22,7 @@ import QuoteCycler from '../shared/quotes/quote_cycler';
 import HelmetContainer from '../shared/helmet_container';
 import YouTubeEmbed from '../shared/youtube_embed';
 import LinkButton from '../shared/link_button';
+import PictureContainer from '../shared/picture_container';
 
 function Speaking() {
 	var schoolsQuotes = require('../../resources/data/quotes/schools.json');
@@ -62,8 +74,11 @@ function Speaking() {
 										YouTube
 									</a>
 								</div>
-								<img
-									src={otmImg}
+								<PictureContainer
+									fallback={otmImgFallback}
+									webp={otmImgWebp}
+									jxr={otmImgJxr}
+									jp2={otmImgJp2}
 									alt='Neil Hughes speaking'
 									title='Neil Hughes speaking'
 								/>
@@ -94,8 +109,11 @@ function Speaking() {
 				<div className='tile is-parent'>
 					<div className='tile is-parent is-5'>
 						<div className='tile is-child'>
-							<img
-								src={ebrdImg}
+							<PictureContainer
+								fallback={ebrdImg}
+								webp={ebrdImgWebp}
+								jp2={ebrdImgJP2}
+								jxr={ebrdImgJxr}
 								alt='Neil Hughes at EBRD'
 								title='Neil Hughes at EBRD'
 							/>
@@ -148,9 +166,11 @@ function Speaking() {
 									quote='I have finally arranged to do something properly about my anxiety issues. Your Ted Talk was very much the start of the process… thank you.'
 									cite='Louise'
 								/>
-
-								<img
-									src={tedImg}
+								<PictureContainer
+									fallback={tedImg}
+									webp={tedImgWebp}
+									jp2={tedImgJP2}
+									jxr={tedImgJxr}
 									alt='Neil Hughes at TEDx LeamingtonSpa'
 									title='Neil Hughes at TEDx LeamingtonSpa'
 								/>
