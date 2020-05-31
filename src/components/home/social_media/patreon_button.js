@@ -1,6 +1,7 @@
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
+import loadable from '@loadable/component';
 
-const PatreonButtonContent = lazy(() => import('./patreon_button_content'));
+const PatreonButtonContent = loadable(() => import('./patreon_button_content'));
 
 const renderLoader = () => <span>...</span>;
 
