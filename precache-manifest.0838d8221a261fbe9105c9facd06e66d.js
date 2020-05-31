@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6402262f1c9641bda2aea6bd9103c854",
+    "revision": "3be2bc4f7a531c3587ae29abfa0d0ccb",
     "url": "/index.html"
   },
   {
-    "revision": "6a1909c34f28f61d66e1",
+    "revision": "cf2514a09606658f0e6a",
     "url": "/static/css/2.038373d4.chunk.css"
   },
   {
-    "revision": "f798b8974707ccbdfbc1",
+    "revision": "1fa6c1dde2e904cd2744",
     "url": "/static/css/main.0ac0e37d.chunk.css"
   },
   {
-    "revision": "6a1909c34f28f61d66e1",
-    "url": "/static/js/2.000a7bce.chunk.js"
+    "revision": "cf2514a09606658f0e6a",
+    "url": "/static/js/2.1cbd3f58.chunk.js"
   },
   {
     "revision": "a1a636632721a402612df3e043dd630d",
-    "url": "/static/js/2.000a7bce.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.1cbd3f58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "63a57ea34416c61f44a4",
-    "url": "/static/js/3.9eca11b5.chunk.js"
+    "revision": "6b6845ae993a41a75aff",
+    "url": "/static/js/3.3666ad3e.chunk.js"
   },
   {
-    "revision": "f798b8974707ccbdfbc1",
-    "url": "/static/js/main.06a0a353.chunk.js"
+    "revision": "1fa6c1dde2e904cd2744",
+    "url": "/static/js/main.187b59b5.chunk.js"
   },
   {
-    "revision": "9a240a6c1828eef347f0",
-    "url": "/static/js/runtime-main.6de33101.js"
+    "revision": "d537950b53e4436061ab",
+    "url": "/static/js/runtime-main.06bda19f.js"
   },
   {
     "revision": "d95598572d5d4dcc1df930a3e9ad4bc8",
@@ -40,20 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/JCU_PE_1024.b97a1635.jpg"
   },
   {
-    "revision": "28e337d351b81c8f04fe7f42794aa200",
-    "url": "/static/media/OneTrackMinds.28e337d3.jxr"
+    "revision": "3b1e3722d2277fd5a946b071baf62080",
+    "url": "/static/media/OneTrackMinds.3b1e3722.jp2"
   },
   {
-    "revision": "6f002b53196857959172cf6244dc0011",
-    "url": "/static/media/OneTrackMinds.6f002b53.jp2"
+    "revision": "c3b40cd52a6333f31bb4a134f4ce9ba6",
+    "url": "/static/media/OneTrackMinds.c3b40cd5.webp"
   },
   {
-    "revision": "7de8e80d8416c15917bdfb2d7c9a33d2",
-    "url": "/static/media/OneTrackMinds.7de8e80d.webp"
+    "revision": "f61b7eb9ad2df47004b1c032f8bfe851",
+    "url": "/static/media/OneTrackMinds.f61b7eb9.jpg"
   },
   {
-    "revision": "dac173a848126737e5fd52edc376ac2a",
-    "url": "/static/media/OneTrackMinds.dac173a8.jpg"
+    "revision": "fffa4a6edcfad8ba858ab3de8afa1a96",
+    "url": "/static/media/OneTrackMinds.fffa4a6e.jxr"
   },
   {
     "revision": "45bb07f6b34ed088522b69f01ccf2d13",
@@ -196,6 +196,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sblCover.c0ece307.webp"
   },
   {
+    "revision": "4af98fbc3029c8310840e865450f65b7",
+    "url": "/static/media/sblCover_thumb.4af98fbc.jp2"
+  },
+  {
+    "revision": "4c9ad36e9d1e795bdce0c34a76a7be43",
+    "url": "/static/media/sblCover_thumb.4c9ad36e.webp"
+  },
+  {
+    "revision": "c73c69552e1a0ac1f3f1efb30023f4a7",
+    "url": "/static/media/sblCover_thumb.c73c6955.jxr"
+  },
+  {
+    "revision": "fb99a2b9227b94fa52e193dc1b7d34ef",
+    "url": "/static/media/sblCover_thumb.fb99a2b9.jpg"
+  },
+  {
     "revision": "19c0e74ce6be161754ecc025c570f738",
     "url": "/static/media/ted_speak.19c0e74c.jpg"
   },
@@ -226,5 +242,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d3ca7ce057604a4373f6a4c4daa1f376",
     "url": "/static/media/wocCover.d3ca7ce0.jp2"
+  },
+  {
+    "revision": "493cb4ed4a5794bc07191485c8cda98f",
+    "url": "/static/media/wocCover_thumb.493cb4ed.webp"
+  },
+  {
+    "revision": "4e8607e116b4251ae7f450a76bf14902",
+    "url": "/static/media/wocCover_thumb.4e8607e1.jp2"
+  },
+  {
+    "revision": "7501185eb718b0548dfd99ee6f6593a1",
+    "url": "/static/media/wocCover_thumb.7501185e.jpg"
+  },
+  {
+    "revision": "a0f67d91eb937f9fd8b296c7841bb383",
+    "url": "/static/media/wocCover_thumb.a0f67d91.jxr"
   }
 ]);
