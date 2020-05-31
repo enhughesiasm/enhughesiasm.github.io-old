@@ -38,6 +38,7 @@ const ReCaptcha = (props) => {
 						const { verifyCallback, action } = props;
 
 						window.grecaptcha.ready(function () {
+							console.log(clientConfig.recaptchaSiteKey);
 							window.grecaptcha
 								.execute(clientConfig.recaptchaSiteKey, {
 									action,
