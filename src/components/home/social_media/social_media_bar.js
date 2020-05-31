@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 // import fbLogo from '../../resources/images/find_us_on_fb.png';
 import { Helmet } from 'react-helmet';
+import PatreonButton from './patreon_button';
 
 const SocialMediaBar = () => {
 	if (false && process.env.NODE_ENV !== 'production') return null;
@@ -24,11 +25,7 @@ const SocialMediaBar = () => {
 					defer
 					src='https://apis.google.com/js/platform.js'
 				/>
-				<script
-					async
-					defer
-					src='https://c6.patreon.com/becomePatronButton.bundle.js'
-				/>
+
 				<script
 					data-name='BMC-Widget'
 					src='https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js'
@@ -66,15 +63,7 @@ const SocialMediaBar = () => {
 				</a>
 			</span>
 
-			<span
-				className='socialMediaItem'
-				style={{ display: 'inline-block' }}>
-				<a
-					href='https://www.patreon.com/bePatron?u=295238'
-					data-patreon-widget-type='become-patron-button'>
-					Become a Patron!
-				</a>
-			</span>
+			<PatreonButton />
 
 			<span className='socialMediaItem is-hidden-mobile'>
 				<div

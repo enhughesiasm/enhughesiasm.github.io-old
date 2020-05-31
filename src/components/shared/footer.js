@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialMediaBar from '../home/social_media_bar';
+import SocialMediaBar from '../home/social_media/social_media_bar';
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
