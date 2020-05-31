@@ -1,9 +1,9 @@
 import React from 'react';
-import { ReCaptcha } from 'react-recaptcha-v3';
-import clientConfig from '../../config/client_config';
+
 import ContactForm from './contact_form';
 import { submitContactForm, testRoundTrip } from './submit_contact_form';
 import LoadingBounce from '../shared/loading_bounce';
+import ReCaptcha from './recaptcha';
 
 class ContactFormGate extends React.Component {
 	state = {
@@ -61,7 +61,6 @@ class ContactFormGate extends React.Component {
 		return (
 			<>
 				<ReCaptcha
-					sitekey={clientConfig.recaptchaSiteKey}
 					action='contact_form'
 					verifyCallback={this.verifyCallback}
 				/>
