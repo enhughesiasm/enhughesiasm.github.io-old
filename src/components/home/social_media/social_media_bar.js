@@ -14,17 +14,17 @@ const SocialMediaBar = () => {
 			<Helmet>
 				{/* THIRD PARTY SOCIAL SCRIPTS */}
 				{/* <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"></link> */}
-				<script
+				{/* <script
 					async
 					defer
 					src='https://platform.twitter.com/widgets.js'
 					charset='utf-8'
-				/>
-				<script
+				/> */}
+				{/* <script
 					async
 					defer
 					src='https://apis.google.com/js/platform.js'
-				/>
+				/> */}
 
 				<script
 					async
@@ -67,14 +67,14 @@ const SocialMediaBar = () => {
 
 			<PatreonButton />
 
-			<span className='socialMediaItem is-hidden-mobile'>
+			{/* <span className='socialMediaItem is-hidden-mobile'>
 				<div
 					className='g-ytsubscribe'
 					data-channelid='UCo7rSj8sIu823Z3c5ju9FfA'
 					data-layout='default'
 					data-theme='dark'
 					data-count='default'></div>
-			</span>
+			</span> */}
 		</section>
 	);
 };
