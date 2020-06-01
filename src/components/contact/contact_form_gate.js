@@ -1,9 +1,9 @@
 import React from 'react';
-
 import ContactForm from './contact_form';
 import { submitContactForm, testRoundTrip } from './submit_contact_form';
 import LoadingBounce from '../shared/loading_bounce';
 import ReCaptcha from './recaptcha';
+import clientConfig from '../../config/client_config';
 
 class ContactFormGate extends React.Component {
 	state = {
@@ -33,20 +33,37 @@ class ContactFormGate extends React.Component {
 	onSubmit = async (inputs) => {
 		this.setState({ submitted: true, submittedText: inputs.message });
 
-		const response = await submitContactForm(inputs);
+		// refresh the recaptcha token as they expire after 2 minutes
+		const token = await window.grecaptcha.execute(
+			clientConfig.recaptchaSiteKey,
+			{
+				action: 'submit_contact_form',
+			}
+		);
 
-		if (response.ok) {
-			const body = await response.json();
+		if (token) {
+			inputs.recaptchaToken = token;
+			const response = await submitContactForm(inputs);
 
-			this.setState({
-				submissionSuccess: body.success,
-				responseMessage: body.message,
-			});
+			if (response.ok) {
+				const body = await response.json();
+
+				this.setState({
+					submissionSuccess: body.success,
+					responseMessage: body.message,
+				});
+			} else {
+				this.setState({
+					submissionSuccess: false,
+					responseMessage:
+						response.message || 'Something happened. Sorry!',
+				});
+			}
 		} else {
+			console.log('Could not refresh recaptcha token');
 			this.setState({
 				submissionSuccess: false,
-				responseMessage:
-					response.message || 'Something happened. Sorry!',
+				responseMessage: 'Sorry. Recaptcha could not be checked.',
 			});
 		}
 	};
@@ -61,7 +78,7 @@ class ContactFormGate extends React.Component {
 		return (
 			<>
 				<ReCaptcha
-					action='contact_form'
+					action='load_contact_form'
 					verifyCallback={this.verifyCallback}
 				/>
 				{!submitted && (

@@ -1,11 +1,10 @@
 import React from 'react';
 import HelmetContainer from '../shared/helmet_container';
 import ContactFormGate from './contact_form_gate';
-import clientConfig from '../../config/client_config';
 
 function Contact() {
 	return (
-		<div className='has-text-centered has-spacing-top-3'>
+		<div className='has-text-centered'>
 			<HelmetContainer page='contact' />
 
 			<h1 className='title'>contact</h1>

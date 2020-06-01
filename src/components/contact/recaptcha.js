@@ -21,7 +21,9 @@ const isReady = () =>
 	typeof window.grecaptcha.execute !== 'undefined';
 
 const ReCaptcha = (props) => {
-	const scriptUrl = 'https://www.google.com/recaptcha/api.js';
+	const scriptUrl =
+		'https://www.google.com/recaptcha/api.js?render=' +
+		clientConfig.recaptchaSiteKey;
 
 	const [ready, setReady] = useState(false);
 
@@ -38,7 +40,6 @@ const ReCaptcha = (props) => {
 						const { verifyCallback, action } = props;
 
 						window.grecaptcha.ready(function () {
-							console.log(clientConfig.recaptchaSiteKey);
 							window.grecaptcha
 								.execute(clientConfig.recaptchaSiteKey, {
 									action,
@@ -61,7 +62,7 @@ const ReCaptcha = (props) => {
 	return (
 		<>
 			<Helmet onChangeClientState={handleChangeClientState}>
-				<script defer src={scriptUrl} />
+				<script async defer src={scriptUrl} />
 			</Helmet>
 			{ready ? (
 				<div
