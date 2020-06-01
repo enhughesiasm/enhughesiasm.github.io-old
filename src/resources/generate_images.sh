@@ -16,7 +16,7 @@ for file in *; do
 
 		# Conversion to Next Gen formats, using solely imageMagick defaults
 		# 100 is used as the default generally lessens the quality of the image
-		convert $file -quality 100 ./WebP/$fileName.webp
+		convert $file -quality 90 ./WebP/$fileName.webp
 		convert $file ./JP2/$fileName.jp2
 		#convert $file ./JPX/$fileName.jpx
 		convert $file ./JXR/$fileName.jxr
