@@ -80,18 +80,23 @@ class HelmetContainer extends React.Component {
 
 				{/* SHARED FONTS */}
 				<link
-					rel='stylesheet'
+					rel='preload'
+					as='style'
 					href='https://indestructibletype-fonthosting.github.io/jost.css'
 					type='text/css'
 					charset='utf-8'
 				/>
 				<link
-					rel='stylesheet'
+					rel='preload'
+					as='style'
 					href='https://indestructibletype.com/fonts/Bodoni/Bodoni.css'
 					type='text/css'
 					charset='utf-8'
 				/>
-				<script src='https://kit.fontawesome.com/73a247027b.js'></script>
+				<script
+					async
+					defer
+					src='https://kit.fontawesome.com/73a247027b.js'></script>
 				{/* <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> --> */}
 
 				{/* ANY PAGE SPECIFIC THINGS CAN BE ADDED AS CHILDREN */}
