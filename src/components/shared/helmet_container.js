@@ -85,6 +85,7 @@ class HelmetContainer extends React.Component {
 					href='https://indestructibletype-fonthosting.github.io/jost.css'
 					type='text/css'
 					charset='utf-8'
+					crossOrigin
 				/>
 				<link
 					rel='preload'
@@ -92,6 +93,7 @@ class HelmetContainer extends React.Component {
 					href='https://indestructibletype.com/fonts/Bodoni/Bodoni.css'
 					type='text/css'
 					charset='utf-8'
+					crossOrigin
 				/>
 				<script
 					async
