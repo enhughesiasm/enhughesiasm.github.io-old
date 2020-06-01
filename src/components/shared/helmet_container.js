@@ -80,20 +80,16 @@ class HelmetContainer extends React.Component {
 
 				{/* SHARED FONTS */}
 				<link
-					rel='preload'
-					as='style'
+					rel='stylesheet'
 					href='https://indestructibletype-fonthosting.github.io/jost.css'
 					type='text/css'
 					charset='utf-8'
-					crossOrigin
 				/>
 				<link
-					rel='preload'
-					as='style'
+					rel='stylesheet'
 					href='https://indestructibletype.com/fonts/Bodoni/Bodoni.css'
 					type='text/css'
 					charset='utf-8'
-					crossOrigin
 				/>
 				<script
 					async
