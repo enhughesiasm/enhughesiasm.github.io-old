@@ -46,12 +46,16 @@ import shopImg1024 from './../../../resources/images/sbl_renders/SBL_PE_1024.jpg
 import FontAwesome from '../../shared/font_awesome';
 import SBLMedals from './sbl_medals';
 import PictureContainer from '../../shared/picture_container';
+import useViewport from '../../shared/use_viewport';
+import breakPoints from '../../shared/viewport_breakpoints';
 
 function ShopBeforeLife() {
 	var officialQuotes = require('../../../resources/data/quotes/sbl_official.json');
 	var otherQuotes = require('../../../resources/data/quotes/sbl_other.json');
 
 	let purchaseHeaderText = 'READ NOW';
+
+	const { width } = useViewport();
 
 	return (
 		<>
@@ -224,65 +228,67 @@ function ShopBeforeLife() {
 						</div>
 					</div>
 				</div>
-				<div className='tile is-parent is-hidden-mobile'>
-					<div className='tile is-child has-text-centered box'>
-						<CarouselProvider
-							naturalSlideWidth={480}
-							naturalSlideHeight={480}
-							totalSlides={2}
-							visibleSlides={1}>
-							<Slider>
-								<Slide
-									index={0}
-									style={{ paddingBottom: '42%' }}>
-									{' '}
-									<Magnifier
-										src={jarsImg1024}
-										width={480}
-										mgWidth={140}
-										mgHeight={140}
-										mgShape='square'
-										mgMouseOffsetX={0}
-										mgMouseOffsetY={0}
-										zoomFactor={1.7}
-									/>
-								</Slide>
-								<Slide
-									index={1}
-									style={{ paddingBottom: '42%' }}>
-									<Magnifier
-										src={shopImg1024}
-										width={480}
-										mgWidth={140}
-										mgHeight={140}
-										mgShape='square'
-										mgMouseOffsetX={0}
-										mgMouseOffsetY={0}
-										zoomFactor={1.7}
-									/>
-								</Slide>
-							</Slider>
-							<ButtonBack className='button'>
-								<FontAwesome icon='chevron-circle-left' />
-							</ButtonBack>
-							<Dot slide={0} />
-							<Dot slide={1} />
-							<ButtonNext className='button'>
-								<FontAwesome icon='chevron-circle-right' />
-							</ButtonNext>
-						</CarouselProvider>
+				{width > breakPoints.MOBILE && (
+					<div className='tile is-parent is-hidden-mobile'>
+						<div className='tile is-child has-text-centered box'>
+							<CarouselProvider
+								naturalSlideWidth={480}
+								naturalSlideHeight={480}
+								totalSlides={2}
+								visibleSlides={1}>
+								<Slider>
+									<Slide
+										index={0}
+										style={{ paddingBottom: '42%' }}>
+										{' '}
+										<Magnifier
+											src={jarsImg1024}
+											width={480}
+											mgWidth={140}
+											mgHeight={140}
+											mgShape='square'
+											mgMouseOffsetX={0}
+											mgMouseOffsetY={0}
+											zoomFactor={1.7}
+										/>
+									</Slide>
+									<Slide
+										index={1}
+										style={{ paddingBottom: '42%' }}>
+										<Magnifier
+											src={shopImg1024}
+											width={480}
+											mgWidth={140}
+											mgHeight={140}
+											mgShape='square'
+											mgMouseOffsetX={0}
+											mgMouseOffsetY={0}
+											zoomFactor={1.7}
+										/>
+									</Slide>
+								</Slider>
+								<ButtonBack className='button'>
+									<FontAwesome icon='chevron-circle-left' />
+								</ButtonBack>
+								<Dot slide={0} />
+								<Dot slide={1} />
+								<ButtonNext className='button'>
+									<FontAwesome icon='chevron-circle-right' />
+								</ButtonNext>
+							</CarouselProvider>
 
-						<div className='smallPrint'>
-							3d renders courtesy of{' '}
-							<a
-								href='https://www.instagram.com/sky2sart/'
-								target='_blank'
-								rel='noopener noreferrer'>
-								sky2sart
-							</a>
+							<div className='smallPrint'>
+								3d renders courtesy of{' '}
+								<a
+									href='https://www.instagram.com/sky2sart/'
+									target='_blank'
+									rel='noopener noreferrer'>
+									sky2sart
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
+				)}
 				<div className='tile is-parent'>
 					<div className='tile is-child'>
 						<QuoteCycler
