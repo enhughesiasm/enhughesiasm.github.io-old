@@ -17,13 +17,13 @@ export class HomeLayout extends React.PureComponent {
 				)}
 				<Header />
 				<main id='wrapper' className='columns'>
-					<div
-						className='column has-spacing-top'
-						style={{ padding: '0 8%' }}>
+					<div className='column' />
+					<div className='column has-spacing-top is-three-fifths-fullhd'>
 						<Suspense fallback={<SuspenseLoader />}>
 							{this.props.children}
 						</Suspense>
 					</div>
+					<div className='column' />
 				</main>
 				<Footer />
 				<SubscribePopup />
