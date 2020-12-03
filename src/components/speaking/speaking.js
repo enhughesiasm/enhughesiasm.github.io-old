@@ -65,7 +65,7 @@ function Speaking() {
 						<div className='tile is-child'>
 							<div className='content'>
 								<div className='notification is-light has-text-centered'>
-									Over 250,000 people have watched Neil&apos;s
+									Over 300,000 people have watched Neil&apos;s
 									hilarious and inspiring story on{' '}
 									<a
 										href='http://bit.ly/custardTED'
