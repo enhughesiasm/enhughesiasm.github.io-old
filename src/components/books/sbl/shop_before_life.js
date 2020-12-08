@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Magnifier from 'react-magnifier';
 import {
@@ -12,6 +13,11 @@ import {
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import HelmetContainer from '../../shared/helmet_container';
+
+import wocCover from './../../../resources/images/wocCover.jpg';
+import wocCoverWebp from './../../../resources/images/WebP/wocCover.webp';
+import wocCoverJp2 from './../../../resources/images/JP2/wocCover.jp2';
+import wocCoverJxr from './../../../resources/images/JXR/wocCover.jxr';
 
 import paulCorfield2 from './../../../resources/images/paul_corfield_2.jpg';
 import paulCorfield2Webp from './../../../resources/images/WebP/paul_corfield_2.webp';
@@ -61,10 +67,50 @@ function ShopBeforeLife() {
 		<>
 			<HelmetContainer page='shop_before_life' />
 			<div className='tile is-ancestor is-vertical'>
+				<div className='tile is-parent is-marginless is-paddingless'>
+					<div className='tile content is-child has-text-centered is-marginless is-paddingless'>
+						<h2 className='has-drop-cap is-paddingless is-family-secondary'>
+							The Shop Before Life
+						</h2>
+						<p className='is-paddingless is-family-secondary'>
+							"Who will you become?"
+						</p>
+					</div>
+				</div>
 				<div className='tile is-parent is-hidden-mobile'>
 					<div className='tile is-child is-12 has-text-centered'>
 						<Trait />
 					</div>
+				</div>
+				<div
+					className='is-hidden-touch is-hidden-desktop-only is-pulled-right notification is-light has-text-centered'
+					style={{
+						position: 'absolute',
+						right: '2rem',
+						display: 'flex',
+						flexDirection: 'column',
+						justifyContent: 'center',
+						alignItems: 'center',
+					}}>
+					<h2>
+						<strong>Also by Neil Hughes...</strong>
+					</h2>
+					<Link to='/woc'>
+						<p className='mt-3' style={{ width: '150px' }}>
+							<PictureContainer
+								fallback={wocCover}
+								webp={wocCoverWebp}
+								jxr={wocCoverJxr}
+								jp2={wocCoverJp2}
+								alt='Walking on Custard book cover'
+								title='Walking on Custard book cover'
+								className='wocTinyCover'
+							/>
+							<strong className='has-text-primary'>
+								Walking on Custard
+							</strong>
+						</p>
+					</Link>
 				</div>
 				<div className='tile is-parent'>
 					<div
