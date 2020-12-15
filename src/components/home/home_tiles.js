@@ -8,27 +8,26 @@ import Tile_Worrier from './tiles/tile_worrier';
 import Tile_Speaker from './tiles/tile_speaker';
 import Tile_Comedian from './tiles/tile_comedian';
 import Tile_Physicist from './tiles/tile_physicist';
+import Tile_Truths from './tiles/tile_truths';
 
 const HomeTiles = () => (
-
-	<div className="tile is-parent is-12 ">
-		<div className="tile is-parent is-vertical is-4">
-			<Tile_Neil/>
-			<Tile_Worrier/>
-			<Tile_Comedian/>
+	<div className='tile is-parent is-12 '>
+		<div className='tile is-parent is-vertical is-4'>
+			<Tile_Neil />
+			<Tile_Worrier />
+			<Tile_Comedian />
 		</div>
-		<div className="tile is-parent is-vertical is-4">
-			<Tile_Writer/>
-			<Tile_Physicist/>
-			<Tile_Todo/>
+		<div className='tile is-parent is-vertical is-4'>
+			<Tile_Writer />
+			<Tile_Physicist />
+			<Tile_Todo />
 		</div>
-		<div className="tile is-parent is-vertical is-4">
-			<Tile_Speaker/>
-			<Tile_Coder/>
+		<div className='tile is-parent is-vertical is-4'>
+			<Tile_Speaker />
+			<Tile_Coder />
+			<Tile_Truths />
 		</div>
 	</div>
-
-
 );
 
 export default HomeTiles;
