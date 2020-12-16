@@ -33,7 +33,7 @@ const SBLMedals = ({ isHiddenMobile }) => (
 				webp={readersFavBadgeWebp}
 				jxr={readersFavBadgeJxr}
 				jp2={readersFavBadgeJP2}
-				style={{ width: '130px' }}
+				style={{ width: '70px' }}
 			/>
 		</a>
 		<a
@@ -46,7 +46,7 @@ const SBLMedals = ({ isHiddenMobile }) => (
 				webp={bragMedallionBadgeWebp}
 				jp2={bragMedallionBadgeJP2}
 				jxr={bragMedallionBadgeJxr}
-				style={{ width: '130px' }}
+				style={{ width: '70px' }}
 			/>
 		</a>
 	</p>

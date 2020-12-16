@@ -54,6 +54,7 @@ import SBLMedals from './sbl_medals';
 import PictureContainer from '../../shared/picture_container';
 import useViewport from '../../shared/use_viewport';
 import breakPoints from '../../shared/viewport_breakpoints';
+import Quote from '../../shared/quotes/quote';
 
 function ShopBeforeLife() {
 	var officialQuotes = require('../../../resources/data/quotes/sbl_official.json');
@@ -67,21 +68,23 @@ function ShopBeforeLife() {
 		<>
 			<HelmetContainer page='shop_before_life' />
 			<div className='tile is-ancestor is-vertical'>
-				<div className='tile is-parent is-marginless is-paddingless'>
+				<div className='tile has-text-primary is-parent is-marginless is-paddingless'>
 					<div className='tile content is-child has-text-centered is-marginless is-paddingless'>
 						<h2 className='has-drop-cap is-paddingless is-family-secondary'>
 							The Shop Before Life
 						</h2>
-						<p className='is-paddingless is-family-secondary'>
+						<p className='is-paddingless is-family-secondary has-text-grey'>
 							"Who will you become?"
 						</p>
 					</div>
 				</div>
+
 				<div className='tile is-parent is-hidden-mobile'>
-					<div className='tile is-child is-12 has-text-centered'>
+					<div className='tile is-child is-12 has-text-centered has-text-grey'>
 						<Trait />
 					</div>
 				</div>
+
 				<div
 					className='is-hidden-touch is-hidden-desktop-only is-pulled-right notification is-light has-text-centered'
 					style={{
@@ -111,6 +114,17 @@ function ShopBeforeLife() {
 							</strong>
 						</p>
 					</Link>
+					{/* <BookPurchase
+						showHeader={true}
+						title='The Shop Before Life'
+						headerText={'Read The Shop Before Life'}
+						amazonPaperbackUrl='http://viewbook.at/sbl'
+						amazonHardbackUrl='http://viewbook.at/sblh'
+						kindleUrl='http://viewbook.at/sblk'
+						bookDepoUrl='http://www.bookdepository.com/Shop-Before-Life-Neil-Hughes/9780993166846/?a_aid=walkingoncustard'
+						isHiddenMobile
+						hideBorder
+					/> */}
 				</div>
 				<div className='tile is-parent'>
 					<div
@@ -132,9 +146,14 @@ function ShopBeforeLife() {
 							</a>
 							<CoverBy />
 						</div>
-						<SBLMedals />
+						<Quote
+							showLoader={false}
+							opacity={1}
+							quote='Incredibly creative in its scope, premise, and storytelling. <br/> <br/>A delightful blend of humor, wit, and imagination, The Shop Before Life seeks to answer the universe’s greatest existential mysteries with humanity and heart.'
+							cite='Judge, 28th Annual Writer’s Digest Self-Published Book Awards'
+						/>
 					</div>
-					<div className='tile is-child is-5 content'>
+					<div className='tile is-child is-6 content'>
 						<p className='has-drop-cap'>
 							<strong>
 								After two happy centuries in the prelife, Faythe
@@ -167,11 +186,17 @@ function ShopBeforeLife() {
 							<span className='traitName'>DELIGHTED BY CATS</span>
 							?
 						</p>
+						{/* <SBLMedals /> */}
+						<div className='tile is-parent'>
+							<div className='tile is-child is-12 has-text-centered'>
+								<img src={jarsLeft} style={{ width: '5rem' }} />
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className='tile is-parent'>
 					<div
-						className='tile is-child is-flex box has-background-light'
+						className='tile is-child  '
 						style={{ alignItems: 'center' }}>
 						<BookPurchase
 							showHeader={false}
@@ -185,20 +210,16 @@ function ShopBeforeLife() {
 							hideBorder
 						/>
 					</div>
-					<div className='tile is-child is-5'>
+					<div className='tile is-child is-6'>
 						<QuoteCycler
 							quotes={officialQuotes}
-							secondsPerQuote={9.5}
+							secondsPerQuote={25}
 							secondsPerTransition={1.5}
 							randomStart={true}
 						/>
 					</div>
 				</div>
-				<div className='tile is-parent'>
-					<div className='tile is-child is-12 has-text-centered'>
-						<img src={jarsLeft} style={{ width: '5rem' }} />
-					</div>
-				</div>
+
 				<div className='tile is-parent'>
 					<div className='tile is-child is-8'>
 						<div className='content'>
@@ -274,7 +295,7 @@ function ShopBeforeLife() {
 						</div>
 					</div>
 				</div>
-				{width > breakPoints.MOBILE && (
+				{/* {width > breakPoints.MOBILE && (
 					<div className='tile is-parent is-hidden-mobile'>
 						<div className='tile is-child has-text-centered box'>
 							<CarouselProvider
@@ -334,12 +355,12 @@ function ShopBeforeLife() {
 							</div>
 						</div>
 					</div>
-				)}
+				)} */}
 				<div className='tile is-parent'>
 					<div className='tile is-child'>
 						<QuoteCycler
 							quotes={otherQuotes}
-							secondsPerQuote={10}
+							secondsPerQuote={25}
 							secondsPerTransition={1.5}
 							randomStart={true}
 						/>
