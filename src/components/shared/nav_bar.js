@@ -66,7 +66,9 @@ class NavBar extends React.Component {
 								to='/'
 								className='navbar-item'
 								activeClassName='active'>
-								<div onClick={this.onNavLinkClicked}>home</div>
+								<div onClick={this.onNavLinkClicked}>
+									who is neil hughes
+								</div>
 							</NavLink>
 
 							<div className='navbar-item has-dropdown is-hoverable'>

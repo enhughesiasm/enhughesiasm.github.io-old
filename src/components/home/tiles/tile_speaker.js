@@ -16,8 +16,17 @@ const Tile_Speaker = () => {
 			<p className='title is-size-5-mobile'>
 				<Link to='/speaking'>speaker</Link>
 			</p>
-			{/* <p className="is-size-7" style={{position:'relative', 'top': '-1.35rem'}}><em>(hilarious, inspiring)</em></p> */}
-			<div className='notification is-light is-warning'>
+			<div className='notification is-warning'>
+				<div>
+					Neil gives{' '}
+					<a href='https://patreon.com/walkingoncustard'>
+						{' '}
+						funny talks about mental health
+					</a>{' '}
+					at schools, conferences & more
+				</div>
+			</div>
+			<div className='notification  is-warning'>
 				<a
 					href='http://bit.ly/custardTED'
 					target='_blank'
@@ -46,23 +55,10 @@ const Tile_Speaker = () => {
 					<strong>anxiety</strong> and <strong>custard</strong>.
 				</p>
 			</div>
-			<div className='notification is-warning'>
-				<span className='smallPrint'>
-					(when the world isn&apos;t paused by a virus)
-				</span>
-				<div>
-					Neil gives{' '}
-					<a href='https://patreon.com/walkingoncustard'>
-						{' '}
-						funny talks about mental health
-					</a>{' '}
-					at schools, conferences & more
-				</div>
-			</div>
 
 			<LinkButton
 				to='/speaking'
-				className='button is-small is-rounded is-warning is-inverted is-outlined'>
+				className='button is-small is-rounded is-warning is-inverted'>
 				<span>need a speaker? click here</span>
 			</LinkButton>
 

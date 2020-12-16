@@ -34,16 +34,18 @@ const Tile_Worrier = () => (
 		<p className='title is-size-5-mobile'>
 			<Link to='/anxiety'>worrier</Link>
 		</p>
-		<CurrentWorry />
 		<p className='notification is-danger is-light'>
+			<CurrentWorry />
+		</p>
+		<p className='mb-3'>
 			Neil lived with terrible anxiety for years. Now he worries less
 			harmfully.
-			<LinkButton
-				to='/anxiety'
-				className='button is-rounded is-small is-danger is-outlined is-light'>
-				learn more
-			</LinkButton>
 		</p>
+		<LinkButton
+			to='/anxiety'
+			className='button is-rounded is-small is-danger is-outlined is-light'>
+			learn more
+		</LinkButton>
 	</article>
 );
 

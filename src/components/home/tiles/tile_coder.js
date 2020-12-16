@@ -7,26 +7,18 @@ const Tile_Coder = () => (
 		<p className='title  is-size-5-mobile'>
 			<Link to='/interactive'>coder</Link>
 		</p>
-		<p className='has-text-weight-bold'>
-			professional software developer since 2009
-		</p>
+		<p className=''>professional software developer since 2009</p>
 		<hr />
-		<ul className=''>
-			<li
-				className='notification is-light is-info'
-				style={{ marginTop: '.5rem' }}>
+		<ul className='has-text-primary'>
+			<li className=''>
 				<a href='https://enhughesiasm.com/complex'>
-					<strong>free online game</strong>
 					<p>create personality traits for a magical shop</p>
 				</a>
 			</li>
-
-			<li
-				className='notification is-light is-info'
-				style={{ marginTop: '.5rem' }}>
-				{/* <a href='https://q.enhughesiasm.com'> */}
-				an interactive quiz for live events
-				{/* </a> */}
+			<li className='mt-3'>
+				<a href='https://enhughesiasm.com/q'>
+					play an interactive quiz for live events
+				</a>
 			</li>
 		</ul>
 		<hr />
