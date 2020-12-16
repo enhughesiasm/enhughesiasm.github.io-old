@@ -45,6 +45,7 @@ const Tile_Truths = () => {
 				<em>click to reveal the truth/lie</em>
 			</p>
 			<hr />
+			<strong className='is-size-4'>Neil... </strong>
 			<ul className=''>
 				{selected.map((item) => (
 					<li

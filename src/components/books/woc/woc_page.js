@@ -89,7 +89,7 @@ function WocPage(props) {
 							<h3 className='has-drop-cap is-paddingless is-family-secondary'>
 								Walking on Custard & the Meaning of Life
 							</h3>
-							<p className='is-paddingless is-family-secondary'>
+							<p className='is-paddingless is-family-secondary has-text-grey'>
 								"One of the best funny books about anxiety"
 							</p>
 						</div>

@@ -23,6 +23,7 @@ import HelmetContainer from '../shared/helmet_container';
 import YouTubeEmbed from '../shared/youtube_embed';
 import LinkButton from '../shared/link_button';
 import PictureContainer from '../shared/picture_container';
+import { TedTalkViewCount } from '../../resources/data/data';
 
 function Speaking() {
 	var schoolsQuotes = require('../../resources/data/quotes/schools.json');
@@ -65,8 +66,9 @@ function Speaking() {
 						<div className='tile is-child'>
 							<div className='content'>
 								<div className='notification is-light has-text-centered'>
-									Over 300,000 people have watched Neil&apos;s
-									hilarious and inspiring story on{' '}
+									Over {TedTalkViewCount.toLocaleString()}{' '}
+									people have watched Neil&apos;s hilarious
+									and inspiring story on{' '}
 									<a
 										href='http://bit.ly/custardTED'
 										target='_blank'
@@ -197,7 +199,7 @@ const SpeakingContact = () => (
 			<div className='message-body'>
 				<div className='content'>
 					<p>
-						Contact <strong>neil@walkingoncustard.com</strong> or
+						Contact <strong>neil@walkingoncustard.com</strong> or{' '}
 						<strong>use the button below</strong> for a quote for
 						your event. Please include (potential) dates, your
 						intended audience and the expected length of the

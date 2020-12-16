@@ -1,11 +1,21 @@
 import { TedTalkViewCount } from './../data';
 
 export const truths = [
-	'neil technically invented a method of distinguishing radioactive isotopes',
-	'neil once experienced hallucinations due to altitude sickness',
-	'neil plays the tuba',
-	'neil has lived on three continents',
-	`neil's TED talk has been viewed over ${TedTalkViewCount} times`,
-	'neil can (sorta) speak five languages',
-	'neil once ate three meals at one sitting due to politeness and cultural misunderstanding',
+	'... technically invented a method of distinguishing radioactive isotopes',
+	'... once experienced hallucinations due to altitude sickness',
+	'... plays the tuba',
+	'... has lived on three continents',
+	`... gave a TED talk which has been viewed over ${TedTalkViewCount.toLocaleString()} times`,
+	'... can (sorta) speak five languages',
+	'... once ate three meals at one sitting due to excessive politeness',
+	`... accidentally assaulted somebody with a banana while performing at the Edinburgh Fringe in 2003`,
+	'... started computer programming as a child, on a ZX Spectrum +2 in the 1980s',
+	`... 's first big public speech was about his fear of public speaking`,
+	'... knows all the words to Whenever, Wherever by Shakira in the original Spanish',
+	'... drove 4000km in two days to attend the Champions League Final in 2019',
+	`... doesn't have any tonsils`,
+	'... once lived for months in an abandoned swimming pool changing room in a desert',
+	'... was once (wrongly) known as Rowan to an entire town in rural Australia',
+	`... once spent a day wanted for arrest for a crime he didn't commit`,
+	'... is allergic to apples',
 ];

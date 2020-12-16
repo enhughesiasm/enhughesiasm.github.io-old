@@ -8,6 +8,7 @@ import otmPicJxr from './../../../resources/images/JXR/OneTrackMinds.jxr';
 
 import LinkButton from './../../shared/link_button';
 import PictureContainer from '../../shared/picture_container';
+import { TedTalkViewCount } from '../../../resources/data/data';
 
 const Tile_Speaker = () => {
 	return (
@@ -39,9 +40,10 @@ const Tile_Speaker = () => {
 				<p
 					className='smallPrint has-text-centered'
 					style={{ marginTop: '10px', marginBottom: '10px' }}>
-					A <strong>quarter of a million people</strong> have already
-					enjoyed the surprising link between <strong>anxiety</strong>{' '}
-					and <strong>custard</strong>.
+					Over{' '}
+					<strong>{TedTalkViewCount.toLocaleString()} people</strong>{' '}
+					have already enjoyed the surprising link between{' '}
+					<strong>anxiety</strong> and <strong>custard</strong>.
 				</p>
 			</div>
 			<div className='notification is-warning'>
