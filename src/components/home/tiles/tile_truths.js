@@ -37,7 +37,7 @@ const Tile_Truths = () => {
 	const [selected, setSelected] = useState(getSelectedTruths());
 
 	return (
-		<article className='is-hidden-touch tile is-child notification is-light has-text-centered'>
+		<article className='tile is-child notification is-light has-text-centered'>
 			<p className='title has-text-primary  is-size-5-mobile'>
 				two truths & a lie
 			</p>
