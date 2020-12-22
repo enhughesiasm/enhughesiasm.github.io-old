@@ -4,13 +4,13 @@ import LinkButton from '../../shared/link_button';
 
 const Tile_Coder = () => (
 	<article className='tile is-child notification is-info has-text-centered'>
-		<p className='title  is-size-5-mobile'>
+		<p className='title is-size-5-mobile'>
 			<Link to='/interactive'>coder</Link>
 		</p>
 		<p className=''>professional software developer since 2009</p>
 		<hr />
 		<ul className='has-text-primary'>
-			<li className=''>
+			<li className='mt-3'>
 				<a href='https://enhughesiasm.com/complex'>
 					<p>create personality traits for a magical shop</p>
 				</a>
