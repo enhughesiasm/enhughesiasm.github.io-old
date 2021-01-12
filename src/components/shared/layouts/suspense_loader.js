@@ -13,7 +13,10 @@ const SuspenseLoader = () => (
 			display: 'flex',
 		}}>
 		<div style={{ justifyContent: 'center', alignItems: 'center' }}>
-			{/* Loading... <LoadingBounce size='100' /> */}
+			<strong>Loading...</strong>
+			<div className='mt-4'>
+				<LoadingBounce size='100' />
+			</div>
 		</div>
 	</div>
 );
