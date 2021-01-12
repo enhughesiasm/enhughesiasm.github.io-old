@@ -123,7 +123,7 @@ class QuoteCycler extends React.Component {
 			<div>
 				{showLoader && (
 					<a
-						className='smallPrint is-pulled-left blockquoteToggle has-text-dark'
+						className='smallPrint is-pulled-left blockquoteToggle has-text-danger'
 						onClick={this.toggleShowAllQuotes}>
 						{this.state.showAllQuotes
 							? 'hide '

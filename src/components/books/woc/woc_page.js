@@ -19,6 +19,8 @@ import ReadSample from '../read_sample';
 import CoverBy from '../cover_by';
 import BookPurchase from '../book_purchase';
 import PictureContainer from '../../shared/picture_container';
+import AlsoByNeil from '../also_by_neil';
+import BookTitle from '../book_title';
 
 const quotes = [
 	{
@@ -51,49 +53,22 @@ function WocPage(props) {
 	return (
 		<div>
 			<HelmetContainer page='walking_on_custard' />
-			<div
-				className='is-hidden-touch is-hidden-desktop-only  is-pulled-right notification is-light has-text-centered'
-				style={{
-					position: 'absolute',
-					right: '2rem',
-					display: 'flex',
-					flexDirection: 'column',
-					justifyContent: 'center',
-					alignItems: 'center',
-				}}>
-				<h2>
-					<strong>Also by Neil Hughes...</strong>
-				</h2>
-				<Link to='/sbl'>
-					<p className='mt-3' style={{ width: '150px' }}>
-						<PictureContainer
-							fallback={sblCover}
-							webp={sblCoverWebp}
-							jxr={sblCoverJxr}
-							jp2={sblCoverJp2}
-							alt='Shop Before Life book cover'
-							title='Shop Before Life book cover'
-							className='sblTinyCover'
-						/>
-						<strong className='has-text-primary'>
-							The Shop Before Life
-						</strong>
-					</p>
-				</Link>
-			</div>
 
-			<div className='content' style={{ marginTop: '1rem' }}>
+			<AlsoByNeil
+				title='The Shop Before Life'
+				altText='The book cover for The Shop Before Life'
+				linkToUrl='/sbl'
+				fallback={sblCover}
+				webp={sblCoverWebp}
+				jxr={sblCoverJxr}
+				jp2={sblCoverJp2}
+			/>
+			<div className='content'>
 				<div className='tile is-ancestor is-vertical'>
-					<div className='tile is-parent is-marginless is-paddingless'>
-						<div className='tile is-child has-text-centered is-marginless is-paddingless'>
-							<h3 className='has-drop-cap is-paddingless is-family-secondary'>
-								Walking on Custard & the Meaning of Life
-							</h3>
-							<p className='is-paddingless is-family-secondary has-text-grey'>
-								"One of the best funny books about anxiety"
-							</p>
-						</div>
-					</div>
+					<BookTitle
+						title='Walking on Custard & the Meaning of Life'
+						subtitle='"One of the best funny books about anxiety"'
+					/>
 					<div className='tile is-parent'>
 						<div className='tile is-parent'>
 							<div className='tile is-child'>

@@ -55,6 +55,8 @@ import PictureContainer from '../../shared/picture_container';
 import useViewport from '../../shared/use_viewport';
 import breakPoints from '../../shared/viewport_breakpoints';
 import Quote from '../../shared/quotes/quote';
+import AlsoByNeil from '../also_by_neil';
+import BookTitle from '../book_title';
 
 function ShopBeforeLife() {
 	var officialQuotes = require('../../../resources/data/quotes/sbl_official.json');
@@ -68,16 +70,10 @@ function ShopBeforeLife() {
 		<>
 			<HelmetContainer page='shop_before_life' />
 			<div className='tile is-ancestor is-vertical'>
-				<div className='tile has-text-primary is-parent is-marginless is-paddingless'>
-					<div className='tile content is-child has-text-centered is-marginless is-paddingless'>
-						<h2 className='has-drop-cap is-paddingless is-family-secondary'>
-							The Shop Before Life
-						</h2>
-						<p className='is-paddingless is-family-secondary has-text-grey'>
-							"Who will you become?"
-						</p>
-					</div>
-				</div>
+				<BookTitle
+					title='The Shop Before Life'
+					subtitle='"Who will you become?"'
+				/>
 
 				<div className='tile is-parent is-hidden-mobile'>
 					<div className='tile is-child is-12 has-text-centered has-text-grey'>
@@ -85,47 +81,16 @@ function ShopBeforeLife() {
 					</div>
 				</div>
 
-				<div
-					className='is-hidden-touch is-hidden-desktop-only is-pulled-right notification is-light has-text-centered'
-					style={{
-						position: 'absolute',
-						right: '2rem',
-						display: 'flex',
-						flexDirection: 'column',
-						justifyContent: 'center',
-						alignItems: 'center',
-					}}>
-					<h2>
-						<strong>Also by Neil Hughes...</strong>
-					</h2>
-					<Link to='/woc'>
-						<p className='mt-3' style={{ width: '150px' }}>
-							<PictureContainer
-								fallback={wocCover}
-								webp={wocCoverWebp}
-								jxr={wocCoverJxr}
-								jp2={wocCoverJp2}
-								alt='Walking on Custard book cover'
-								title='Walking on Custard book cover'
-								className='wocTinyCover'
-							/>
-							<strong className='has-text-primary'>
-								Walking on Custard
-							</strong>
-						</p>
-					</Link>
-					{/* <BookPurchase
-						showHeader={true}
-						title='The Shop Before Life'
-						headerText={'Read The Shop Before Life'}
-						amazonPaperbackUrl='http://viewbook.at/sbl'
-						amazonHardbackUrl='http://viewbook.at/sblh'
-						kindleUrl='http://viewbook.at/sblk'
-						bookDepoUrl='http://www.bookdepository.com/Shop-Before-Life-Neil-Hughes/9780993166846/?a_aid=walkingoncustard'
-						isHiddenMobile
-						hideBorder
-					/> */}
-				</div>
+				<AlsoByNeil
+					title='Walking on Custard'
+					altText='The book cover for Walking on Custard'
+					linkToUrl='/woc'
+					fallback={wocCover}
+					webp={wocCoverWebp}
+					jxr={wocCoverJxr}
+					jp2={wocCoverJp2}
+				/>
+
 				<div className='tile is-parent'>
 					<div
 						className='tile is-child content has-text-centered'
