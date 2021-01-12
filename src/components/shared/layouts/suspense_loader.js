@@ -3,14 +3,14 @@ import LoadingBounce from '../loading_bounce';
 
 const SuspenseLoader = () => (
 	<div
-		className='notification is-light is-flex'
+		className='notification is-white is-flex ml-5'
 		style={{
-			height: '50vh',
-			width: '100%',
 			textAlign: 'center',
 			justifyContent: 'center',
 			alignItems: 'center',
 			display: 'flex',
+			position: 'absolute',
+			left: '5%',
 		}}>
 		<div style={{ justifyContent: 'center', alignItems: 'center' }}>
 			<strong>Loading...</strong>
