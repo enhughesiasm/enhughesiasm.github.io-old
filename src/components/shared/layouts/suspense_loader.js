@@ -11,6 +11,8 @@ const SuspenseLoader = () => (
 			display: 'flex',
 			position: 'absolute',
 			left: '5%',
+			bottom: '10%'
+			sdfiojsiodfjodsj check out the bottom position - put this component in the main layout and look at it
 		}}>
 		<div style={{ justifyContent: 'center', alignItems: 'center' }}>
 			<strong>Loading...</strong>

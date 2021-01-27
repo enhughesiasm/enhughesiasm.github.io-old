@@ -41,7 +41,7 @@
 		"canonicalUrl": "https://enhughesiasm.com/books/",
 		"title": "Books by Neil Hughes",
 		"contentType": "website",
-		"description": "Neil Hughes has written a number of books, including 'Walking on Custard' and 'The Shop Before Life'",
+		"description": "Comedian and author Neil Hughes has written a number of books, including 'Walking on Custard' and 'The Shop Before Life'",
 		"imageUrl": "https://enhughesiasm.com/images/neil.png"
 	},
 	"anxiety": {
@@ -52,8 +52,8 @@
 	},
 	"walking_on_custard": {
 		"canonicalUrl": "https://enhughesiasm.com/walking-on-custard/",
-		"title": "Walking on Custard - A Funny Book for Anxious Humans, by Neil Hughes",
-		"description": "A funny book about anxiety and mental health by the comedian Neil Hughes.",
+		"title": "The Best Funny Book about Anxiety: Walking on Custard",
+		"description": "Comedian Neil Hughes lived with anxiety for years. But thinking about custard led to a surprising solution. \"A must read for anyone suffering from anxiety\".",
 		"imageUrl": "https://enhughesiasm.com/images/custard.png",
 		"includeSocialMediaScripts": true
 	},
