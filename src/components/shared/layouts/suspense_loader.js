@@ -10,14 +10,13 @@ const SuspenseLoader = () => (
 			alignItems: 'center',
 			display: 'flex',
 			position: 'absolute',
-			left: '5%',
-			bottom: '10%'
-			sdfiojsiodfjodsj check out the bottom position - put this component in the main layout and look at it
+			left: '1%',
+			bottom: '1%',
 		}}>
 		<div style={{ justifyContent: 'center', alignItems: 'center' }}>
 			<strong>Loading...</strong>
-			<div className='mt-4'>
-				<LoadingBounce size='100' />
+			<div className='mt-1'>
+				<LoadingBounce size='40' />
 			</div>
 		</div>
 	</div>
