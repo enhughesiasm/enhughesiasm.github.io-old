@@ -9,7 +9,6 @@ import Tile_Speaker from './tiles/tile_speaker';
 import Tile_Comedian from './tiles/tile_comedian';
 import Tile_Physicist from './tiles/tile_physicist';
 import Tile_Truths from './tiles/tile_truths';
-import SuspenseLoader from '../shared/layouts/suspense_loader';
 
 const HomeTiles = () => (
 	<div className='tile is-parent is-12 '>

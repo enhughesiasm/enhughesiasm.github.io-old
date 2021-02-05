@@ -12,21 +12,17 @@ import { TedTalkViewCount } from '../../../resources/data/data';
 
 const Tile_Speaker = () => {
 	return (
-		<article className='tile is-child notification is-warning  has-text-centered'>
+		<article className='tile is-child notification is-info  has-text-centered'>
 			<p className='title is-size-5-mobile'>
 				<Link to='/speaking'>speaker</Link>
 			</p>
-			<div className='notification is-warning'>
+			<div className=''>
 				<div>
-					Neil gives{' '}
-					<a href='https://patreon.com/walkingoncustard'>
-						{' '}
-						funny talks about mental health
-					</a>{' '}
-					at schools, conferences & more
+					Hilarious & helpful talks about mental health at schools,
+					conferences & more
 				</div>
 			</div>
-			<div className='notification  is-warning'>
+			<div className='notification  is-info'>
 				<a
 					href='http://bit.ly/custardTED'
 					target='_blank'
@@ -51,7 +47,7 @@ const Tile_Speaker = () => {
 					style={{ marginTop: '10px', marginBottom: '10px' }}>
 					Over{' '}
 					<strong>{TedTalkViewCount.toLocaleString()} people</strong>{' '}
-					have already enjoyed the surprising link between{' '}
+					have enjoyed the surprising link between{' '}
 					<strong>anxiety</strong> and <strong>custard</strong>.
 				</p>
 			</div>

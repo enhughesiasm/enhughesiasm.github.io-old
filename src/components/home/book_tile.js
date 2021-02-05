@@ -25,14 +25,14 @@ const BookTile = (props) => (
 				<div className=''>
 					{props.blurb}
 
-					<div>
+					{/* <div>
 						&nbsp;
 						<LinkButton
 							className='is-pulled-right button is-light is-small is-rounded is-primary is-inverted is-outlined'
 							to={props.linkUrl}>
 							learn more
 						</LinkButton>
-					</div>
+					</div> */}
 
 					{/* {props.sampleUrl && (
 						<div>

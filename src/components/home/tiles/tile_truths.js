@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { truths } from './../../../resources/data/truths/truths';
 import { lies } from './../../../resources/data/truths/lies';
-import useHover from './../../shared/use_hover';
 
 const choose = (arr, number) => {
 	const ret = [];

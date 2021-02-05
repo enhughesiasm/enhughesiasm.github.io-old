@@ -16,6 +16,6 @@ export const truths = [
 	`... doesn't have any tonsils`,
 	'... once lived for months in an abandoned swimming pool changing room in a desert',
 	'... was once (wrongly) known as Rowan to an entire town in rural Australia',
-	`... once spent a day wanted for arrest for a crime he didn't commit`,
+	`... has broken one bone and chipped another`,
 	'... is allergic to apples',
 ];

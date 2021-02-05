@@ -42,7 +42,7 @@ const Tile_Writer = () => (
 			coverImg=''
 			title='Articles'
 			linkUrl='/articles'
-			blurb='there are many articles on the internet, some of them written by Neil Hughes'
+			blurb='some of the articles on the internet were written by Neil Hughes'
 		/>
 	</article>
 );

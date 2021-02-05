@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LinkButton from '../../shared/link_button';
 
 const Tile_Coder = () => (
-	<article className='tile is-child notification is-info has-text-centered'>
+	<article className='tile is-child notification is-warning has-text-centered'>
 		<p className='title is-size-5-mobile'>
 			<Link to='/interactive'>coder</Link>
 		</p>
@@ -25,7 +25,7 @@ const Tile_Coder = () => (
 		<p>
 			<LinkButton
 				to='/contact'
-				className='button is-small is-rounded is-info is-light is-inverted is-outlined'>
+				className='button is-small is-rounded is-info is-outlined'>
 				need a developer? inquire here
 			</LinkButton>
 		</p>
