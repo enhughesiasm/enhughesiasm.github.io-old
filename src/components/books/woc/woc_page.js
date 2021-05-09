@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import wocCover from './../../../resources/images/wocCover.jpg';
 import wocCoverWebp from './../../../resources/images/WebP/wocCover.webp';

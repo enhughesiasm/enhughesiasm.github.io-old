@@ -1,31 +1,31 @@
 import React from 'react';
 
-import Tile_Coder from './tiles/tile_coder';
-import Tile_Todo from './tiles/tile_todo';
-import Tile_Writer from './tiles/tile_writer';
-import Tile_Neil from './tiles/tile_neil';
-import Tile_Worrier from './tiles/tile_worrier';
-import Tile_Speaker from './tiles/tile_speaker';
-import Tile_Comedian from './tiles/tile_comedian';
-import Tile_Physicist from './tiles/tile_physicist';
-import Tile_Truths from './tiles/tile_truths';
+import TileCoder from './tiles/tile_coder';
+import TileTodo from './tiles/tile_todo';
+import TileWriter from './tiles/tile_writer';
+import TileNeil from './tiles/tile_neil';
+import TileWorrier from './tiles/tile_worrier';
+import TileSpeaker from './tiles/tile_speaker';
+import TileComedian from './tiles/tile_comedian';
+import TilePhysicist from './tiles/tile_physicist';
+import TileTruths from './tiles/tile_truths';
 
 const HomeTiles = () => (
 	<div className='tile is-parent is-12 '>
 		<div className='tile is-parent is-vertical is-4'>
-			<Tile_Neil />
-			<Tile_Worrier />
-			<Tile_Comedian />
+			<TileNeil />
+			<TileWorrier />
+			<TileComedian />
 		</div>
 		<div className='tile is-parent is-vertical is-4'>
-			<Tile_Writer />
-			<Tile_Physicist />
-			<Tile_Todo />
+			<TileWriter />
+			<TilePhysicist />
+			<TileTodo />
 		</div>
 		<div className='tile is-parent is-vertical is-4'>
-			<Tile_Speaker />
-			<Tile_Coder />
-			<Tile_Truths />
+			<TileSpeaker />
+			<TileCoder />
+			<TileTruths />
 		</div>
 	</div>
 );

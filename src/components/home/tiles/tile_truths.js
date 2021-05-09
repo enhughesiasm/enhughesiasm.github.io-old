@@ -32,7 +32,7 @@ const getSelectedTruths = () => {
 		.sort(() => Math.random() - 0.5);
 };
 
-const Tile_Truths = () => {
+const TileTruths = () => {
 	const [selected, setSelected] = useState(getSelectedTruths());
 
 	return (
@@ -87,4 +87,4 @@ const Tile_Truths = () => {
 	);
 };
 
-export default Tile_Truths;
+export default TileTruths;

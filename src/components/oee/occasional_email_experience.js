@@ -7,10 +7,6 @@ import HelmetContainer from '../shared/helmet_container';
 import Quote from '../shared/quotes/quote';
 
 class OccasionalEmailExperience extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<div>

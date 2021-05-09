@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import LinkButton from '../shared/link_button';
 import PictureContainer from '../shared/picture_container';
 
 const BookTile = (props) => (

@@ -20,6 +20,7 @@ const allPaths = [
 	'/now',
 	'/confirm-signup',
 	'/signup-confirmed',
+	'/coding',
 ];
 
 export default allPaths;

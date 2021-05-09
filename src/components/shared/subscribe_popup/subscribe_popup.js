@@ -41,7 +41,7 @@ class SubscribePopup extends React.Component {
 	canShowPopup = () => {
 		// console.log('checking canShowPopup');
 
-		const debugOverride = false && process.env.NODE_ENV == 'development';
+		const debugOverride = false && process.env.NODE_ENV === 'development';
 
 		if (!debugOverride) {
 			if (this.state.hasShownPopup) {
@@ -74,7 +74,7 @@ class SubscribePopup extends React.Component {
 			// console.log('no: already submitted');
 			timeConditionMet = false; // never show to already submitted user
 		} else {
-			if (!popupStorage.lastShown || popupStorage.dismissCount == 0) {
+			if (!popupStorage.lastShown || popupStorage.dismissCount === 0) {
 				// first ever show
 				// console.log('yes: first ever');
 				timeConditionMet = true;
@@ -104,10 +104,10 @@ class SubscribePopup extends React.Component {
 
 	isOnMailPage = () => {
 		return (
-			this.props.location.pathname == '/occasional-email-experience' ||
-			this.props.location.pathname == '/mailing' ||
-			this.props.location.pathname == '/confirm-signup' ||
-			this.props.location.pathname == '/signup-confirmed'
+			this.props.location.pathname === '/occasional-email-experience' ||
+			this.props.location.pathname === '/mailing' ||
+			this.props.location.pathname === '/confirm-signup' ||
+			this.props.location.pathname === '/signup-confirmed'
 		);
 	};
 

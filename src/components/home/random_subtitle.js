@@ -11,49 +11,45 @@ const subtitles = [
 	'a satisfactory homepage for Neil Hughes',
 	'the best geocities neighbour you could imagine',
 	'please enjoy your stay',
-	'Neil Hughes: Does Stupid Things, So You Don\'t Have To',
+	"Neil Hughes: Does Stupid Things, So You Don't Have To",
 	'silly things to make you feel better',
 	'a perpetual state of chaos',
-	'expertise in generality'
+	'expertise in generality',
 ];
 
-class RandomSubtitle extends React.Component{
-
-	constructor(props){
+class RandomSubtitle extends React.Component {
+	constructor(props) {
 		super(props);
-
 
 		this.state = {
 			remainingSubtitles: [...subtitles],
-			subtitle: subtitles[Math.floor(Math.random() * subtitles.length)]
+			subtitle: subtitles[Math.floor(Math.random() * subtitles.length)],
 		};
 
 		this.getNewSubtitle = this.getNewSubtitle.bind(this);
 		this.setRandomSubtitle = this.setRandomSubtitle.bind(this);
 	}
 
-	setRandomSubtitle(){
+	setRandomSubtitle(e) {
+		e.preventDefault();
 		this.setState({ subtitle: this.getNewSubtitle(this.state.subtitle) });
 	}
 
-	getNewSubtitle(existingSubtitle){
-
+	getNewSubtitle(existingSubtitle) {
 		let subtitlePool = this.state.remainingSubtitles;
 
-		if(subtitlePool.length == 0){
+		if (subtitlePool.length === 0) {
 			subtitlePool = [...subtitles];
 		}
 
-		let subtitle=existingSubtitle;
+		let subtitle = existingSubtitle;
 		let index = 0;
-		while(subtitle == existingSubtitle){
-
+		while (subtitle === existingSubtitle) {
 			index = Math.floor(Math.random() * subtitlePool.length);
 			subtitle = subtitlePool[index];
 		}
 
-
-		if(index>=0){
+		if (index >= 0) {
 			let newSubtitles = [...subtitlePool];
 			newSubtitles.splice(index, 1);
 			this.setState({ remainingSubtitles: newSubtitles });
@@ -62,19 +58,23 @@ class RandomSubtitle extends React.Component{
 		return subtitle;
 	}
 
-	render(){
+	render() {
 		return (
-			<div style={{userSelect:'none', MozUserSelect:'none'}} className="is-size-6 is-size-6-mobile">
-				<a className="tooltip is-tooltip-bottom is-tooltip-primary"
-					data-tooltip="click for extremely mild entertainment">
-					<i className="fas fa-redo-alt fa-xs subtitleIcon"
-						style={{cursor:'pointer'}}
-						onClick={this.setRandomSubtitle} ></i></a>
-					&nbsp;&nbsp;
-				{ this.state.subtitle }
+			<div
+				style={{ userSelect: 'none', MozUserSelect: 'none' }}
+				className='is-size-6 is-size-6-mobile'>
+				<a
+					href='#'
+					className='tooltip is-tooltip-bottom is-tooltip-primary'
+					data-tooltip='click for extremely mild entertainment'>
+					<i
+						className='fas fa-redo-alt fa-xs subtitleIcon'
+						style={{ cursor: 'pointer' }}
+						onClick={this.setRandomSubtitle}></i>
+				</a>
+				&nbsp;&nbsp;
+				{this.state.subtitle}
 			</div>
-
-
 		);
 	}
 }

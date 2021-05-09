@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Tile_Physicist = () => (
-	<article className="tile is-child notification is-light has-text-centered">
-		<p className="title is-size-5-mobile">physicist</p>
+const TilePhysicist = () => (
+	<article className='tile is-child notification is-light has-text-centered'>
+		<p className='title is-size-5-mobile'>physicist</p>
 		<p>his masters degree in physics is used for:</p>
 		<ul>
 			<li>- talking about custard more than is strictly necessary</li>
@@ -12,4 +12,4 @@ const Tile_Physicist = () => (
 	</article>
 );
 
-export default Tile_Physicist;
+export default TilePhysicist;

@@ -26,7 +26,7 @@ const SignupConfirmed = () => (
 				</div>
 				<div className='tile is-parent'>
 					<div className='tile is-child'>
-						<img src={yayImg} />
+						<img src={yayImg} alt='Hooray' />
 						<p className='smallPrint'>this joy is now yours</p>
 					</div>
 				</div>

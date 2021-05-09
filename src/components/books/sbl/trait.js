@@ -37,7 +37,11 @@ export default class Trait extends React.Component {
 			<span
 				className='trait is-size-6 has-text-centered'
 				style={this.props.style}>
-				<img src={jar1} style={{ width: '25px' }} />
+				<img
+					src={jar1}
+					style={{ width: '25px' }}
+					alt={this.state.trait}
+				/>
 				<span
 					style={{
 						padding: '0 .5rem',
@@ -46,7 +50,11 @@ export default class Trait extends React.Component {
 					}}>
 					{this.state.trait}
 				</span>
-				<img src={jar2} style={{ width: '25px' }} />
+				<img
+					src={jar2}
+					style={{ width: '25px' }}
+					alt={this.state.trait}
+				/>
 			</span>
 		);
 	}

@@ -1,5 +1,4 @@
-import React, { lazy, Suspense } from 'react';
-// import fbLogo from '../../resources/images/find_us_on_fb.png';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import PatreonButton from './patreon_button';
 

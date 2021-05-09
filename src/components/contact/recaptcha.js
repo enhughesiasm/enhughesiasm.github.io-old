@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clientConfig from '../../config/client_config';
 import Helmet from 'react-helmet';
@@ -15,10 +15,10 @@ const defaultProps = {
 	verifyCallbackName: 'verifyCallback',
 };
 
-const isReady = () =>
-	typeof window !== 'undefined' &&
-	typeof window.grecaptcha !== 'undefined' &&
-	typeof window.grecaptcha.execute !== 'undefined';
+// const isReady = () =>
+// 	typeof window !== 'undefined' &&
+// 	typeof window.grecaptcha !== 'undefined' &&
+// 	typeof window.grecaptcha.execute !== 'undefined';
 
 const ReCaptcha = (props) => {
 	const scriptUrl =

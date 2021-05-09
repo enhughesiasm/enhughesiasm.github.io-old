@@ -1,15 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import Magnifier from 'react-magnifier';
-import {
-	CarouselProvider,
-	Slider,
-	Slide,
-	ButtonBack,
-	ButtonNext,
-	Dot,
-} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import HelmetContainer from '../../shared/helmet_container';
@@ -47,13 +36,8 @@ import BookPurchase from '../book_purchase';
 import Trait from './trait';
 import QuoteCycler from '../../shared/quotes/quote_cycler';
 
-import jarsImg1024 from './../../../resources/images/sbl_renders/JCU_PE_1024.jpg';
-import shopImg1024 from './../../../resources/images/sbl_renders/SBL_PE_1024.jpg';
-import FontAwesome from '../../shared/font_awesome';
-import SBLMedals from './sbl_medals';
 import PictureContainer from '../../shared/picture_container';
-import useViewport from '../../shared/use_viewport';
-import breakPoints from '../../shared/viewport_breakpoints';
+
 import Quote from '../../shared/quotes/quote';
 import AlsoByNeil from '../also_by_neil';
 import BookTitle from '../book_title';
@@ -63,8 +47,6 @@ function ShopBeforeLife() {
 	var otherQuotes = require('../../../resources/data/quotes/sbl_other.json');
 
 	let purchaseHeaderText = 'READ NOW';
-
-	const { width } = useViewport();
 
 	return (
 		<>
@@ -154,7 +136,11 @@ function ShopBeforeLife() {
 						{/* <SBLMedals /> */}
 						<div className='tile is-parent'>
 							<div className='tile is-child is-12 has-text-centered'>
-								<img src={jarsLeft} style={{ width: '5rem' }} />
+								<img
+									src={jarsLeft}
+									style={{ width: '5rem' }}
+									alt='Some jars of traits'
+								/>
 							</div>
 						</div>
 					</div>

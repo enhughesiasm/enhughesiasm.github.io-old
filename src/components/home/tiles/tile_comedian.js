@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LinkButton from '../../shared/link_button';
 
-const Tile_Comedian = () => (
+const TileComedian = () => (
 	<article className='tile is-child notification is-dark has-text-centered'>
 		<p className='title is-size-5-mobile'>
 			<Link to='/humour-consultant'>comedian</Link>
@@ -21,4 +21,4 @@ const Tile_Comedian = () => (
 	</article>
 );
 
-export default Tile_Comedian;
+export default TileComedian;

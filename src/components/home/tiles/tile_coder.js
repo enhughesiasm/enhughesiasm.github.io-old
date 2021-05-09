@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LinkButton from '../../shared/link_button';
 
-const Tile_Coder = () => (
+const TileCoder = () => (
 	<article className='tile is-child notification is-warning has-text-centered'>
 		<p className='title is-size-5-mobile'>
 			<Link to='/interactive'>coder</Link>
@@ -32,4 +32,4 @@ const Tile_Coder = () => (
 	</article>
 );
 
-export default Tile_Coder;
+export default TileCoder;

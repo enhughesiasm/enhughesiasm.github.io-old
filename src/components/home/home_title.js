@@ -1,7 +1,5 @@
 import React from 'react';
 import RandomSubtitle from './random_subtitle';
-import { Link } from 'react-router-dom';
-import Trait from '../books/sbl/trait';
 
 const HomeTitle = () => (
 	<div className='tile is-parent is-12 notification is-light mb-0'>

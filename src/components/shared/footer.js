@@ -13,7 +13,7 @@ const Footer = () => {
 					<span>
 						{' '}
 						&copy; Neil Hughes 2019
-						{currentYear != 2019 ? '—' + currentYear : ''}
+						{currentYear !== 2019 ? '—' + currentYear : ''}
 					</span>
 					<NavLink to='/contact' className=''>
 						contact

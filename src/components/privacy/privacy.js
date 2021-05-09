@@ -672,7 +672,11 @@ function Privacy() {
 								end of this. In the unlikely event anyone has
 								ever read this document, I hope you enjoyed it,
 								and I am pleased that you are so easily
-								entertained 🙂 Love!
+								entertained{' '}
+								<span role='img' aria-label='smile'>
+									🙂
+								</span>{' '}
+								Love!
 							</p>
 						</div>
 					</div>

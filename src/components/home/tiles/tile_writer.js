@@ -12,7 +12,7 @@ import sblCoverWebp from './../../../resources/images/WebP/sblCover_thumb.webp';
 import sblCoverJp2 from './../../../resources/images/JP2/sblCover_thumb.jp2';
 import sblCoverJxr from './../../../resources/images/JXR/sblCover_thumb.jxr';
 
-const Tile_Writer = () => (
+const TileWriter = () => (
 	<article className='tile is-child notification is-primary has-text-centered'>
 		<p className='title notification is-primary is-size-5-mobile is-paddingless'>
 			<Link to='/books'>writer</Link>
@@ -47,4 +47,4 @@ const Tile_Writer = () => (
 	</article>
 );
 
-export default Tile_Writer;
+export default TileWriter;

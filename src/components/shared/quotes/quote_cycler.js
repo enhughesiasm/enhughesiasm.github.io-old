@@ -151,7 +151,7 @@ class QuoteCycler extends React.Component {
 								key={getHashCode(
 									this.state.quotes[index].quote
 								)}
-								showLoader={index == 0}
+								showLoader={index === 0}
 								quote={this.state.quotes[index].quote}
 								cite={this.state.quotes[index].cite}
 							/>

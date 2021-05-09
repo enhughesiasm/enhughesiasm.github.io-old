@@ -10,7 +10,7 @@ import LinkButton from './../../shared/link_button';
 import PictureContainer from '../../shared/picture_container';
 import { TedTalkViewCount } from '../../../resources/data/data';
 
-const Tile_Speaker = () => {
+const TileSpeaker = () => {
 	return (
 		<article className='tile is-child notification is-info  has-text-centered'>
 			<p className='title is-size-5-mobile'>
@@ -70,4 +70,4 @@ const Tile_Speaker = () => {
 	);
 };
 
-export default Tile_Speaker;
+export default TileSpeaker;

@@ -29,7 +29,7 @@ const CurrentWorry = () => {
 	);
 };
 
-const Tile_Worrier = () => (
+const TileWorrier = () => (
 	<article className='tile is-child notification is-danger has-text-centered'>
 		<p className='title is-size-5-mobile'>
 			<Link to='/anxiety'>worrier</Link>
@@ -49,4 +49,4 @@ const Tile_Worrier = () => (
 	</article>
 );
 
-export default Tile_Worrier;
+export default TileWorrier;

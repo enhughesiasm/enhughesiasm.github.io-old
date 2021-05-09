@@ -11,7 +11,7 @@ import facePic2Jp2 from './../../../resources/images/JP2/neil_hughes_al.jp2';
 import facePic2Jxr from './../../../resources/images/JXR/neil_hughes_al.jxr';
 import PictureContainer from '../../shared/picture_container';
 
-export default class Tile_Neil extends React.Component {
+export default class TileNeil extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
