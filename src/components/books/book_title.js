@@ -2,7 +2,7 @@ import React from 'react';
 
 const BookTitle = ({ title, subtitle }) => (
 	<div
-		className='tile is-parent is-marginless content has-background-warning-light'
+		className='tile is-parent is-marginless content'
 		style={{ borderRadius: '10px' }}>
 		<div className='tile is-child has-text-centered is-marginless is-paddingless'>
 			<h3 className='has-drop-cap is-paddingless is-family-secondary'>

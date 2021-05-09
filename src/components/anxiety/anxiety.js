@@ -16,11 +16,17 @@ function AnxietyPage() {
 		<div>
 			<HelmetContainer page='anxiety' />
 			<TopTitle
-				title='Neil Hughes experienced  anxiety for most of his life'
-				subtitle='Not constantly! Occasionally he was asleep, or watching the Vicar of Dibley.'
+				title='Neil Hughes experienced  anxiety for most of his life...'
+				subtitle=''
 				size='is-medium'
-				color='is-primary'
+				color='primary'
 			/>
+			<div className='has-text-centered'>
+				<p>
+					But not <em>constantly</em>. Occasionally he was asleep, or
+					watching the Vicar of Dibley.
+				</p>
+			</div>
 
 			<div className='content'>
 				<div className='tile is-ancestor is-vertical'>
@@ -28,8 +34,10 @@ function AnxietyPage() {
 						<div className='tile is-parent'>
 							<div className='tile is-child notification is-warning'>
 								<div className='content is-size-5'>
-									Eventually, he realised how to manage it.
-									Then he:
+									<p>
+										After figuring out how to manage anxiety
+										better, he:
+									</p>
 									<ul>
 										<li>
 											<strong>
@@ -59,41 +67,13 @@ function AnxietyPage() {
 										</li>
 										<li>
 											learned how to wear scarves properly
-											<span className='smallPrint'>
+											<div className='smallPrint'>
 												(but that&apos;s not relevant
 												right now)
-											</span>
+											</div>
 										</li>
 									</ul>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div className='tile is-parent'>
-						<div className='tile is-child notification is-light'>
-							<div className='content is-size-5 has-text-centered'>
-								<strong>Watch him speak right now:</strong>
-								<YouTubeEmbed videoId='bM06o26PCDQ' />
-							</div>
-						</div>
-					</div>
-					<div className='tile is-parent'>
-						<div className='tile is-child notification is-light'>
-							<div className='content is-size-5 has-text-centered'>
-								<Link to='/woc'>
-									<div>
-										<PictureContainer
-											fallback={wocCover}
-											webp={wocCoverWebp}
-											jp2={wocCoverJp2}
-											jxr={wocCoverJxr}
-											style={{ maxWidth: '300px' }}
-										/>
-									</div>
-									<strong>
-										Click here to read the book!
-									</strong>
-								</Link>
 							</div>
 						</div>
 					</div>
@@ -109,8 +89,37 @@ function AnxietyPage() {
 					<div className='tile is-parent'>
 						<div className='tile is-child notification is-light'>
 							<div className='content is-size-5 has-text-centered'>
+								<strong>Watch him speak right now:</strong>
+								<YouTubeEmbed videoId='bM06o26PCDQ' />
+							</div>
+						</div>
+					</div>
+					<div className='tile is-parent'>
+						<div className='tile is-child notification is-light'>
+							<div className='content is-size-5 has-text-centered'>
+								<Link to='/woc'>
+									<strong>
+										Click here to read the book!
+									</strong>
+									<div className='mt-3'>
+										<PictureContainer
+											fallback={wocCover}
+											webp={wocCoverWebp}
+											jp2={wocCoverJp2}
+											jxr={wocCoverJxr}
+											style={{ maxWidth: '300px' }}
+										/>
+									</div>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className='tile is-parent'>
+						<div className='tile is-child notification is-light'>
+							<div className='content is-size-5 has-text-centered'>
 								<strong>
-									See his dedicated mental health site for
+									Or see his dedicated mental health site for
 									more
 								</strong>
 								:{' '}
@@ -118,6 +127,15 @@ function AnxietyPage() {
 									walkingoncustard.com
 								</a>
 							</div>
+						</div>
+					</div>
+					<div className='tile is-parent'>
+						<div className='tile is-child has-text-centered'>
+							<LinkButton
+								to='/speaking'
+								className='button is-danger is-rounded'>
+								need a speaker on anxiety? click here
+							</LinkButton>
 						</div>
 					</div>
 				</div>

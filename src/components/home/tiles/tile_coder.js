@@ -10,14 +10,25 @@ const TileCoder = () => (
 		<p className=''>professional software developer since 2009</p>
 		<hr />
 		<ul className='has-text-primary'>
-			<li className='mt-3'>
+			<li className='mt-3 is-size-7'>
 				<a href='https://enhughesiasm.com/complex'>
-					<p>create personality traits for a magical shop</p>
+					<p>
+						<strong>Supplier's Complex</strong> - create personality
+						traits for a magical shop
+					</p>
 				</a>
 			</li>
-			<li className='mt-3'>
+			<li className='mt-3 is-size-7'>
+				<a href='https://ourpomona.org'>
+					<p>
+						<strong>Our Pomona</strong> - a community-led database
+						for cider producers
+					</p>
+				</a>
+			</li>
+			<li className='mt-3 is-size-7'>
 				<a href='https://enhughesiasm.com/q'>
-					play an interactive quiz for live events
+					<strong>Q</strong> - an interactive quiz for live events
 				</a>
 			</li>
 		</ul>

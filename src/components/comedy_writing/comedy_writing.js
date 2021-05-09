@@ -1,10 +1,16 @@
 import React from 'react';
 import TopTitle from '../shared/top_title';
+import { Link } from 'react-router-dom';
 
 import micImg from './../../resources/images/microphone.jpg';
 import micImgWebp from './../../resources/images/WebP/microphone.webp';
 import micImgJxr from './../../resources/images/JXR/microphone.jxr';
 import micImgJp2 from './../../resources/images/JP2/microphone.jp2';
+
+import otmPic from './../../resources/images/OneTrackMinds.jpg';
+import otmPicWebp from './../../resources/images/WebP/OneTrackMinds.webp';
+import otmPicJP2 from './../../resources/images/JP2/OneTrackMinds.jp2';
+import otmPicJxr from './../../resources/images/JXR/OneTrackMinds.jxr';
 
 import HelmetContainer from '../shared/helmet_container';
 import Quote from '../shared/quotes/quote';
@@ -17,8 +23,8 @@ function ComedyWriting() {
 		<div>
 			<HelmetContainer page='comedy_writing' />
 			<TopTitle
-				title='comedy consulting'
-				subtitle='the easy way to make your presentations more amusing'
+				title='Comedy Consulting'
+				subtitle='A comedy consultant is the easy way to make your presentations more amusing'
 				size='is-medium'
 				color='is-primary'
 			/>
@@ -43,6 +49,24 @@ function ComedyWriting() {
 				</div>
 				<div className='message-body'>
 					<div className='content'>
+						<div className='has-text-centered'>
+							<PictureContainer
+								fallback={otmPic}
+								webp={otmPicWebp}
+								jp2={otmPicJP2}
+								jxr={otmPicJxr}
+								alt='One Track Minds'
+								title='One Track Minds'
+								style={{ maxWidth: '40%' }}
+							/>
+						</div>
+						<p>
+							Neil Hughes is a{' '}
+							<Link to='/speaking'>public speaker</Link> and
+							standup comedian, and he can help you make your
+							speech funnier.
+						</p>
+
 						<p className='message is-warning'>
 							<span>
 								Humour is the best way to connect with
@@ -89,8 +113,8 @@ function ComedyWriting() {
 					Fringe Festival to my local shopping centre.
 				</p>
 				<p>
-					Now I give comedy talks about anxiety, like this one, which
-					has been seen by over A QUARTER OF A MILLION people:
+					Now I give comedy talks about anxiety, like this one: (which
+					has been seen by over A QUARTER OF A MILLION people!)
 				</p>
 
 				<YouTubeEmbed videoId='bM06o26PCDQ' />
