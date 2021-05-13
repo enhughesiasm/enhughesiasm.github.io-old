@@ -30,7 +30,7 @@ const isValidName = (inputs) => {
 const isValidEmail = (inputs) => {
 	return (
 		inputs.email &&
-		/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputs.email)
+		/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(inputs.email)
 	);
 };
 

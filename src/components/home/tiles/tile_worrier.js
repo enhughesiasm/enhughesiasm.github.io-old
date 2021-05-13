@@ -10,6 +10,8 @@ const worryLevels = [
 	'moderate',
 	'not quite tranquil',
 	'almost calm',
+	'gently troubled',
+	'passingly concerned',
 ];
 
 const CurrentWorry = () => {
@@ -34,12 +36,11 @@ const TileWorrier = () => (
 		<p className='title is-size-5-mobile'>
 			<Link to='/anxiety'>worrier</Link>
 		</p>
-		<p className='mb-3'>
-			Neil lived with terrible anxiety for years. Now he worries less
-			harmfully.
-		</p>
 		<p className='notification is-danger is-light'>
 			<CurrentWorry />
+		</p>
+		<p className='mb-3'>
+			Neil lived with terrible anxiety for years. But now he worries less.
 		</p>
 		<LinkButton
 			to='/anxiety'

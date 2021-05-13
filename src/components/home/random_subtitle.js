@@ -2,19 +2,20 @@ import React from 'react';
 
 const subtitles = [
 	'where disappointment gets disappointed',
-	'the home of the third-best Neil Hughes',
+	'home of the third-best Neil Hughes',
 	'it may mildly improve your day',
 	'better than at least one other website',
 	'not technically a religion',
 	'an authentic encounter with Neil Hughes',
 	'this website has been officially rated "hmmm"',
-	'a satisfactory homepage for Neil Hughes',
+	'a satisfactory way to spend time',
 	'the best geocities neighbour you could imagine',
 	'please enjoy your stay',
 	"Neil Hughes: Does Stupid Things, So You Don't Have To",
 	'silly things to make you feel better',
 	'a perpetual state of chaos',
 	'expertise in generality',
+	'a refuge from the internet',
 ];
 
 class RandomSubtitle extends React.Component {

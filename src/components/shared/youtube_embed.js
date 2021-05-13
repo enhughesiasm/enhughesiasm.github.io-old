@@ -25,6 +25,7 @@ export default class YouTubeEmbed extends React.Component {
 					{!this.state.playClicked && <div className='play'></div>}
 					{this.state.playClicked && (
 						<iframe
+							title='Neil Hughes - Walking on Custard TEDx Talk'
 							frameBorder='0'
 							allowFullScreen='1'
 							allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'

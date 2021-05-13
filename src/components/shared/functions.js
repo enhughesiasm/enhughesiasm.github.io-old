@@ -75,13 +75,6 @@ export function JSON_to_URLEncoded(element, key, l) {
 	return list.join('&');
 }
 
-export function groupBy(array, fnSelectKey) {
-	return array.reduce(
-		(r, v, i, a, k = fnSelectKey(v)) => ((r[k] || (r[k] = [])).push(v), r),
-		{}
-	);
-}
-
 export function submitToAnalytics(action, category, label, value) {
 	if (window.gtag) {
 		window.gtag('event', action, {

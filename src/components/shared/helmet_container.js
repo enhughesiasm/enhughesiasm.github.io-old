@@ -91,6 +91,11 @@ class HelmetContainer extends React.Component {
 					type='text/css'
 					charset='utf-8'
 				/>
+				<link rel='preconnect' href='https://fonts.gstatic.com' />
+				<link
+					href='https://fonts.googleapis.com/css2?family=VT323&display=swap'
+					rel='stylesheet'
+				/>
 				<script
 					async
 					defer

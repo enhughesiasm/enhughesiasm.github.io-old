@@ -49,7 +49,7 @@ class OccasionalEmailExperience extends React.Component {
 						</div>
 						<div className='tile is-parent'>
 							<div className='tile is-child notification is-info'>
-								<img src={yayImg} />
+								<img alt='hooray' src={yayImg} />
 								<p className='smallPrint'>
 									the sheer joy of receiving an email from
 									Neil Hughes cannot be contained in a mere

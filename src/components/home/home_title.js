@@ -6,8 +6,11 @@ const HomeTitle = () => (
 		<div className='tile is-child'>
 			<div className='content'>
 				<h1 className='title is-size-5 is-marginless is-paddingless has-text-centered'>
-					welcome
+					welcome to enhughesiasm
 				</h1>
+				<p className='has-text-grey has-text-centered is-size-7'>
+					the online homepage for Neil Hughes
+				</p>
 				{/* <hr style={{margin:'.3rem 0 .5rem'}}/> */}
 				<h3
 					className='subtitle is-size-6 is-paddingless has-text-centered'
