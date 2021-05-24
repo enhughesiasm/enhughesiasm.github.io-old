@@ -226,6 +226,7 @@ class SubscribePopup extends React.Component {
 							className='slidingPane'
 							isOpen={this.state.isOpen}
 							from={'bottom'}
+							width='35%'
 							closeIcon={
 								<div
 									className={

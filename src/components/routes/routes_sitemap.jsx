@@ -1,4 +1,3 @@
-import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import allPaths from './all_paths';
 // the generator needs base Route classes

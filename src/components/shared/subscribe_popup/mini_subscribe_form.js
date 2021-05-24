@@ -126,7 +126,7 @@ export default class MiniSubscribeForm extends React.Component {
 								name='subscribe'
 								id='mc-embedded-subscribe'
 								className={
-									'button is-rounded ' +
+									'button is-size-6 is-size-7-mobile is-rounded ' +
 									(this.isEnabled()
 										? 'is-success'
 										: 'is-danger')

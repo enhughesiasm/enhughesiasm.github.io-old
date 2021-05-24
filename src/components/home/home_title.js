@@ -9,9 +9,9 @@ const HomeTitle = () => (
 					<h1 className='title is-size-5 is-marginless is-paddingless has-text-centered'>
 						welcome to enhughesiasm{' '}
 					</h1>
-					<span className='has-text-grey has-text-centered is-size-7'>
+					{/* <span className='has-text-grey has-text-centered is-size-7'>
 						&nbsp;- the online homepage for Neil Hughes
-					</span>
+					</span> */}
 				</div>
 
 				{/* <hr style={{margin:'.3rem 0 .5rem'}}/> */}
