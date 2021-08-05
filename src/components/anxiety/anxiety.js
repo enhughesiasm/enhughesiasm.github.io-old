@@ -35,14 +35,15 @@ function AnxietyPage() {
 							<div className='tile is-child notification is-warning'>
 								<div className='content is-size-5'>
 									<p>
-										After figuring out how to manage anxiety
-										better, he:
+										After learning how to live with anxiety,
+										he:
 									</p>
 									<ul>
 										<li>
 											<strong>
 												<Link to='/walking-on-custard'>
-													wrote a book about anxiety
+													wrote a book to help other
+													people
 												</Link>
 											</strong>
 										</li>
@@ -78,6 +79,14 @@ function AnxietyPage() {
 						</div>
 					</div>
 					<div className='tile is-parent'>
+						<div className='tile is-child notification is-success'>
+							<div className='content is-size-5 has-text-centered'>
+								<strong>Watch Neil speak right now:</strong>
+								<YouTubeEmbed videoId='bM06o26PCDQ' />
+							</div>
+						</div>
+					</div>
+					<div className='tile is-parent'>
 						<div className='tile is-child has-text-centered'>
 							<LinkButton
 								to='/speaking'
@@ -87,15 +96,7 @@ function AnxietyPage() {
 						</div>
 					</div>
 					<div className='tile is-parent'>
-						<div className='tile is-child notification is-light'>
-							<div className='content is-size-5 has-text-centered'>
-								<strong>Watch him speak right now:</strong>
-								<YouTubeEmbed videoId='bM06o26PCDQ' />
-							</div>
-						</div>
-					</div>
-					<div className='tile is-parent'>
-						<div className='tile is-child notification is-light'>
+						<div className='tile is-child notification is-warning'>
 							<div className='content is-size-5 has-text-centered'>
 								<Link to='/woc'>
 									<strong>

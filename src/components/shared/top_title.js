@@ -9,11 +9,11 @@ const TopTitle = (props) => (
 			(props.size + ' ' || ' is-medium ') +
 			(props.className + ' ' || ' ')
 		}>
-		<h2 className='title has-text-centered has-text-primary'>
+		<h2 className='title has-text-centered has-text-white has-background-primary p-3'>
 			{props.title}
 		</h2>
 
-		<h3 className='subtitle has-text-grey-light'>{props.subtitle}</h3>
+		<h3 className='subtitle has-text-grey is-size-6'>{props.subtitle}</h3>
 	</div>
 );
 

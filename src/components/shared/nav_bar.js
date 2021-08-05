@@ -81,17 +81,20 @@ class NavBar extends React.Component {
 									</div>
 								</NavLink>
 								<div className='navbar-dropdown'>
-									<a
+									<NavLink
+										to='/anxiety'
 										className='navbar-item'
-										href='http://www.walkingoncustard.com'>
-										articles
-									</a>
+										activeClassName='active-drop'>
+										<div onClick={this.onNavLinkClicked}>
+											neil's story
+										</div>
+									</NavLink>
 									<NavLink
 										to='/woc'
 										className='navbar-item'
 										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
-											book
+											a book for anxious humans
 										</div>
 									</NavLink>
 									<NavLink
@@ -99,9 +102,22 @@ class NavBar extends React.Component {
 										className='navbar-item'
 										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
-											talks
+											talks about anxiety
 										</div>
 									</NavLink>
+									<NavLink
+										to='/articles'
+										className='navbar-item'
+										activeClassName='active-drop'>
+										<div onClick={this.onNavLinkClicked}>
+											featured articles
+										</div>
+									</NavLink>
+									<a
+										className='navbar-item'
+										href='http://www.walkingoncustard.com'>
+										all articles
+									</a>
 									<NavLink
 										to='/support'
 										className='navbar-item'
