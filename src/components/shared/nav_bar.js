@@ -118,14 +118,14 @@ class NavBar extends React.Component {
 										href='http://www.walkingoncustard.com'>
 										all articles
 									</a>
-									<NavLink
+									{/* <NavLink
 										to='/support'
 										className='navbar-item'
 										activeClassName='active-drop'>
 										<div onClick={this.onNavLinkClicked}>
 											support Neil&apos;s work
 										</div>
-									</NavLink>
+									</NavLink> */}
 								</div>
 							</div>
 							<div className='navbar-item has-dropdown is-hoverable'>

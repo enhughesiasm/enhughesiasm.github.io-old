@@ -1,6 +1,4 @@
-import React from 'react';
-
-const CodingBlurb = ({ long }) => (
+const CodingBlurb: React.FC<{ long?: boolean }> = ({ long }) => (
 	<div className='has-background-black is-code has-text-success is-size-5 is-size-6-mobile'>
 		<div className='pl-4 mt-3'>
 			<span className='is-size-4 is-size-6-mobile'>$</span> NEIL has been

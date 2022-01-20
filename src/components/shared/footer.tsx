@@ -1,9 +1,8 @@
-import React from 'react';
 import SocialMediaBar from '../home/social_media/social_media_bar';
 import { NavLink } from 'react-router-dom';
 
-const Footer = () => {
-	var currentYear = new Date().getFullYear();
+const Footer: React.FC = () => {
+	let currentYear = new Date().getFullYear();
 
 	return (
 		<div className='footer'>

@@ -1,8 +1,7 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 import PatreonButton from './patreon_button';
 
-const SocialMediaBar = () => {
+const SocialMediaBar: React.FC = () => {
 	if (false && process.env.NODE_ENV !== 'production') return null;
 
 	// console.log('social-media-bar; agent: ' + navigator.userAgent);
@@ -64,7 +63,7 @@ const SocialMediaBar = () => {
 				</a>
 			</span>
 
-			<PatreonButton />
+			{/* <PatreonButton /> */}
 
 			{/* <span className='socialMediaItem is-hidden-mobile'>
 				<div
