@@ -33,7 +33,7 @@
 		"babel-plugin-object-to-json-parse": "0.0.7",
 		"bulma": "^0.9.1",
 		"bulma-extensions": "^6.2.7",
-		"moment": "^2.29.1",
+		"moment": "^2.29.4",
 		"pure-react-carousel": "^1.27.6",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
