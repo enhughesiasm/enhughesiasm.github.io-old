@@ -73,7 +73,7 @@
 	"devDependencies": {
 		"gh-pages": "^2.2.0",
 		"node-sass": "^6.0.0",
-		"react-snap": "^1.13.1"
+		"react-snap": "^1.23.0"
 	},
 	"__reactSnapComments": {
 		"fixWebpackChunksIssue": false,
